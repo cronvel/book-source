@@ -10,12 +10,16 @@
     - three
 3. three
     1. one
-    2. two
+    2. Sub-item
+      spanning
+      over
+      multiple
+      lines
 14. four
 10. five
 117. Item
-     spanning
-     over
-     multiple
-     lines
+  spanning
+  over
+  multiple
+  lines
 

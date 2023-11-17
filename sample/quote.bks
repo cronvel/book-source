@@ -3,8 +3,17 @@ Some paragraph.
 
         Some quote.
         Continue quote paragraph.
-
-        New paragraph in the same quote.
+        
+        ## Header in quote!
+        
+        ---
+        
+        New **paragraph** in the *same* quote.
+        
+	        	Quote in quote!
+    	    	Wonderful!
+        	
+        		Nice!
 
 Another paragraph out of the quote.
 
