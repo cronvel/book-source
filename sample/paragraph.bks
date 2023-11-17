@@ -1,0 +1,14 @@
+
+Ok guy, let's start our story!
+We are checking paragraph detection here...
+This should be packed as only one paragraph.
+
+And this should stand aside.
+
+This paragraph
+\ has some \
+forced\  
+new-lines.
+
+This is a bad \ forced line, it doesn't work.
+
