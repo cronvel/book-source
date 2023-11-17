@@ -1,0 +1,335 @@
+
+/* new */
+
+.book-source em { font-style: italic; }
+.book-source strong { font-weight: bold; }
+.book-source .underline { text-decoration: underline; }
+
+.book-source .style-red { color: red; }
+.book-source .style-orange { color: orange; }
+.book-source .style-yellow { color: yellow; }
+.book-source .style-green { color: green; }
+.book-source .style-teal { color: teal; }
+.book-source .style-cyan { color: cyan; }
+.book-source .style-blue { color: blue; }
+.book-source .style-indigo { color: indigo; }
+.book-source .style-purple { color: purple; }
+.book-source .style-magenta { color: magenta; }
+.book-source .style-pink { color: pink; }
+
+.book-source .title-tooltip { cursor: help; }
+
+.book-source .clear-float { clear: both; }
+
+.book-source code {
+	background-color: #eee;
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	margin: 0 2px;
+	padding: 2px 4px;
+	line-height: 1.7;
+}
+
+
+
+
+
+/* old */
+
+.book-source .float-left { float: left; }
+.book-source .float-right { float: right; }
+
+.book-source .align-left { text-align: left; }
+.book-source .align-right { text-align: right; }
+.book-source .align-center { text-align: center; }
+.book-source .align-justify { text-align: justify; }
+
+.book-source h1 { font-size: 2.6em ; }
+.book-source h2 { font-size: 2em ; }
+.book-source h3 { font-size: 1.6em ; }
+.book-source h4 { font-size: 1.25em ; }
+.book-source h5 { font-size: 1em ; }
+.book-source h6 { font-size: 0.8em ; }
+
+.book-source h1 {
+	margin: 2em 0 3em 0;
+	text-align: center;
+}
+
+.book-source h2 ,
+.book-source h3 {
+	margin: 2em 0 1em 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.book-source h4 ,
+.book-source h5 ,
+.book-source h6 {
+	margin: 0.5em 0 0 0;
+	text-decoration: underline;
+}
+
+.book-source blockquote {
+	font-size: 1.1em;
+	margin: 1em 0;
+	padding: 0.25em 2em;
+	border-radius: 0.5em;
+	background-color: #e9ecfe;
+}
+
+.book-source blockquote cite {
+	display: block;
+	text-align: right;
+	margin-right: 10%;
+}
+
+.book-source blockquote cite::before {
+	content: "-- ";
+}
+
+.book-source p {
+	line-height: 1.7;
+	margin: 1em 0;
+	text-align: justify;
+}
+
+.book-source pre {
+	background-color: #eee;
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	margin: 15px 0;
+	padding: 6px 10px;
+	line-height: 1.4;
+}
+
+.book-source pre code {
+	background-color: #eee;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.book-source mark {
+}
+
+.book-source a {
+	color: #0366d6;
+	text-decoration: none;
+}
+
+.book-source a:hover {
+	text-decoration: underline;
+}
+
+.book-source a:active ,
+.book-source a:hover {
+	outline: 0 none;
+}
+
+/* Block media */
+
+.book-source figure {
+	display: table;
+	margin: 10px auto;
+	width: 1px;
+	border-collapse: collapse;
+}
+
+.book-source figure.float {
+	margin: 2px 2px 10px 2px;
+	clear: both;
+}
+
+.book-source figure.float-left { margin-right: 20px; }
+.book-source figure.float-right { margin-left: 20px; }
+
+.book-source figure img {
+	display: table-row;
+	vertical-align: bottom;
+}
+
+.book-source figure figcaption {
+	display: table-row;
+	text-align: center;
+	font-style: italic;
+	color: #6a737d;
+	background-color: #eee;
+}
+
+/* Sections and columns */
+
+.book-source section {
+	display: flex;
+	clear: both;
+}
+
+.book-source div.column , .book-source column {
+	flex: 1;
+	padding: 0 10px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.book-source div.column:nth-last-child(n+2) , .book-source column:nth-last-child(n+2) {
+	border-right: 1px solid #c6cbd1;
+}
+
+/* Tables */
+
+.book-source table {
+	display: table;
+	margin: 1.5em auto;
+	max-width: 90%;
+	width: auto;
+	overflow: auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.book-source table caption {
+	caption-side: top;
+	text-align: center;
+	background-color: #ff8000;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	border: 1px solid #c6cbd1;
+	padding: 6px 13px;
+}
+
+.book-source table thead tr {
+	background-color: #fae8d6;
+	border-top: 1px solid #c6cbd1;
+	border-bottom: 2px solid #c6cbd1;
+}
+
+.book-source table tbody tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+}
+
+.book-source table tbody tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+.book-source table th, .book-source table td {
+	padding: 6px 13px;
+	border: 1px solid #dfe2e5;
+}
+
+.book-source table th.vertical-separator, .book-source table td.vertical-separator {
+	padding: 0;
+	border-left: 3px solid #afb2b5;
+	border-right: 3px solid #afb2b5;
+	border-top: none;
+	border-bottom: none;
+}
+
+.book-source table td img {
+	max-width: 100%;
+}
+
+/* Lists and checkboxes */
+
+.book-source ul ,
+.book-source ol ,
+.book-source dl {
+	margin: 1em 0;
+	padding: 0 40px;
+}
+
+.book-source li ul ,
+.book-source li ol ,
+.book-source li dl {
+	margin: 0.5em 0;
+}
+
+.book-source ul li ,
+.book-source ol li ,
+.book-source dl li {
+	line-height: 1.7;
+	text-align: justify;
+}
+
+.book-source ul.todo-list {
+	display: table;
+	max-width: 50%;
+	min-width: 10%;
+	background-color: #f6f3c0;
+	border-radius: 0.5em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	padding-right: 2em;
+	padding-left: 4em;		/* =~ 2 + 1 + ( 1.75 + 0.3 ) / 2 */
+}
+
+.book-source ul.todo-list li {
+	text-indent: -1.6em;	/* = 1.75 - 0.3 / 2 */
+	line-height: 1.2;
+}
+
+.book-source ul li.unchecked {
+	list-style: none;
+}
+
+.book-source ul li.unchecked::before {
+	content: '☐';
+	font-size: 1.75em;
+	position: relative;
+	top: 0.15em;
+	right: 0.3em;
+}
+
+.book-source ul li.checked {
+	list-style: none;
+}
+
+.book-source ul li.checked::before {
+	content: '☑';
+	color: green;
+	font-size: 1.75em;
+	position: relative;
+	top: 0.15em;
+	right: 0.3em;
+}
+
+/* experiments */
+
+/* print / pdf */
+
+@media print {
+	.book-source h1 {
+		break-before: page;
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+
+	.book-source h2, .book-source h3, .book-source h4, .book-source h5, .book-source h6 {
+		break-after: avoid-page;
+		break-inside: avoid-page;
+	}
+
+	.book-source p {
+		line-height: 1.5;
+		break-inside: auto;
+		widows: 3;
+		orphans: 3;
+	}
+
+	.book-source blockquote { break-inside: avoid-page; }
+	.book-source cite { break-inside: avoid-page; }
+	.book-source blockquote cite { break-inside: avoid-page; }
+	.book-source table { break-inside: avoid-page; }
+
+	.book-source ul ,
+	.book-source ol ,
+	.book-source dl {
+		break-before: avoid-page;
+		break-inside: avoid-page;
+	}
+
+	.book-source ul li {
+		line-height: 1.5;
+		break-inside: avoid-page;
+	}
+}

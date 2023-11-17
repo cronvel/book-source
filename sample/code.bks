@@ -1,0 +1,11 @@
+
+Example of some Javascript code:
+
+```js
+var x = 17 ;
+var y = x + 3 ;
+console.log( "Y=" , y ) ;
+```
+
+And that's all folks!
+

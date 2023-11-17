@@ -1,0 +1,30 @@
+
+
+
+!=[](4d6r2-histogram.png){Well...}
+
+!=[Graph](4d6r2-histogram.png)
+
+!=[Graph][4d6r2 Stats](4d6r2-histogram.png)
+
+!=[Graph][4d6r2
+Stats](4d6r2-histogram.png)
+
+---
+
+!<[Graph][4d6r2 Stats](4d6r2-histogram.png)
+
+This image should float to the left...
+
+So all those paragraphes should be on the right. And now it's time for some lorem ipsum dolor et ceterae...
+
+---<>---
+
+!>[Graph][4d6r2 Stats](4d6r2-histogram.png)
+
+This image should float to the right...
+
+So all those paragraphes should be on the left. And now it's time for some lorem ipsum dolor et ceterae...
+
+
+

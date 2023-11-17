@@ -1,0 +1,59 @@
+
+
+
+# Da Best Story
+
+Summary:
+
+* [Chapter I: The Encounter](#chapter1)
+* [Chapter II: The Awakening](#chapter2)
+* [Chapter III: He comes](#chapter3)
+
+
+
+#(chapter1)
+## Chapter I: The Encounter
+
+Ok guy, let's start our story!
+We are checking paragraph detection here...
+This should be packed as only one paragraph.
+
+And this should stand aside.
+
+This paragraph
+\ has some \
+forced\  
+new-lines.
+
+This is a bad \ forced line, it doesn't work.
+
+
+
+#(chapter2)
+## Chapter II: The Awakening
+
+This chapter is quite [spooky]<teal>{Brrr... It gives me the chill!}... Maybe go back to [the first chap](#chapter1)? Or are you [ready]{Sure?} for the [final chapter](#chapter3){Spoler Alert!}?
+
+This is an ![some ALT text](smiling.webp){smile!} inline image!
+
+This is a pictogram as emoji: ![cat-grin]. Nice! ![thumb-up]
+
+
+
+#(chapter3)
+## Chapter III: [He comes...]<red>
+
+It's too late...
+He comes...
+
+
+
+#(chapter4)
+## Chapter IV:
+   Source
+   Using
+   Multiline
+   Syntax
+
+Lorem ipsum dolor?
+

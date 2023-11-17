@@ -1,0 +1,144 @@
+
+
+✅ Heading: # Title
+✅ Anchor (generating <a name="anchor-name"></a>: #(anchor-name)
+
+✅ Paragraph are separated by empty lines
+✅ Forced line-break (at the end of line, with or without space after): \
+✅	or (at the begining of the line, with at least on space after): \
+
+? Multiline block are using at least two-spaces or a tab as indentation
+
+✅ Italic: *
+✅ Bold: **
+✅ Bold+italic: ***
+
+✅ Underline: _
+✅ 	or: __
+
+Blockquote: >
+Nested blockquote: >>
+Give proper credit to the quote: -- Name of the quoted person
+Signature at the end of an article: -- Name of the signing person
+
+✅ Unordered list: *
+✅ 	or: -
+✅ Ordered list: 1.
+✅ Nested list, having more indentation
+
+✅ Inline code: `some code`
+✅ Inline code with double bacquote escape: ``some `code` with backquote``
+✅ 	or (extra forced space is trimmed): `` `code` ``
+✅ Code block: ```language
+
+✅ Clear float (3 or more -): <--->
+✅ Horizontal rule (3 or more -): ---
+✅ Horizontal rule + Clear float (3 or more - at both side): ---<>---
+
+✅ Custom style: [text]<style>
+   (where style can be a color like red, green, black, or other style like bold, italic, oblique, separated by a semi-colon ";")
+   (generate a <span>)
+
+✅ Title tooltip: [text]{title text}
+
+✅ Link: [link text](href)
+✅ Link+Title: [link text]{title text}(href)
+
+Hover tooltip text block (support new lines inside the {}): ?[text]{some block of text}
+Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
+
+✅ Inline image with alt text: ![alt text](href)
+✅ Emoji and special characters: ![emoji-name]
+	pre-defined image: ![pre-defined-image-name]
+?	material icon: ![material-icon-name]
+✅ Block image: !=[alt text](href)
+✅ Block image with caption: !=[alt text][caption](href)
+✅ Floating left block image: !<[alt text](href)
+✅ Floating right block image: !>[alt text](href)
+
+Block multimedia: !=[alt text](href)(media-type)
+	media type can be: image, video, audio
+
+
+
+## Tables
+
+Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
+
+
+
+Regular table:
+
+|[ Table caption text           ]|
+| header 1 | header 2 | header 3 |
+|----------|----------|----------|
+| cell 1A  | cell 1B  | cell 1C  |
+| cell 2A  | cell 2B  | cell 2C  |
+| cell 3A  | cell 3B  | cell 3C  |
+
+
+
+Two-entries table:
+
+|[ Table caption text           ]|
+|         || header 1 | header 2 |
+|---------||----------|----------|
+| entry 1 || cell 1A  | cell 1B  |
+| entry 2 || cell 2A  | cell 2B  |
+| entry 3 || cell 3A  | cell 3B  |
+
+
+
+Multi-line table:
+
+|[ Multiline table caption text ]|
+|[ ... with extra line          ]|
+| header 1 | header 2 | header 3 |
+| ...      | ...      | ...      |
+|----------|----------|----------|
+| cell 1A  | cell 1B  | cell 1C  |
+| ...      | ...      | ...      |
+|----------|----------|----------|
+| cell 2A  | cell 2B  | cell 2C  |
+| ...      | ...      | ...      |
+|----------|----------|----------|
+| cell 3A  | cell 3B  | cell 3C  |
+| ...      | ...      | ...      |
+
+
+
+
+
+## Section and Column flow:
+
+Section break (3 or more): +++
+(Clearing all columns and start over on a fresh one-column section, close/open "section" tags)
+
+Column break (close/open "column" custom tags): |||
+
+
+
+
+
+## Misc:
+
+Introduce a todo list item: -[ ]
+Introduce a todo list item done: -[x]
+
+
+
+
+
+
+
+## Name Brainstorming:
+
+Book Source (.bks)
+mk2 (.mk2)
+mkx (.mkx)
+Hyper Markdown (.hmd)
+Hype (.hype)
+Blast (.blast)
+Popcorn (.pop .pcorn)
+
+
