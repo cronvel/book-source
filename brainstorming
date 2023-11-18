@@ -7,7 +7,7 @@
 ✅ Forced line-break (at the end of line, with or without space after): \
 ✅	or (at the begining of the line, with at least on space after): \
 
-? Multiline block are using at least two-spaces or a tab as indentation
+✅ Multiline block are two-spaces indent (multiline header, list-item, etc)
 
 ✅ Italic: *
 ✅ Bold: **
@@ -16,10 +16,11 @@
 ✅ Underline: _
 ✅ 	or: __
 
-Blockquote: >
-Nested blockquote: >>
-Give proper credit to the quote: -- Name of the quoted person
-Signature at the end of an article: -- Name of the signing person
+✅ Blockquote: (8-spaces-indent)
+✅ Nested blockquote: (multiple-of-8-spaces-indent)
+
+✅ Give proper credit to the quote: -- Name the quoted person, or the book, film, lyrics
+✅ Signature at the end of an article: -- Name of the signing person
 
 ✅ Unordered list: *
 ✅ 	or: -
