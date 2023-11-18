@@ -64,7 +64,27 @@ Block multimedia: !=[alt text](href)(media-type)
 
 ## Tables
 
+✅ Very simple table:
+
+| cell 1A  | cell 1B  | cell 1C  |
+| cell 2A  | cell 2B  | cell 2C  |
+| cell 3A  | cell 3B  | cell 3C  |
+
+
+
 Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
+Row template/header-body separator: |----------|--------|---------|
+Optional row separator: |----------|--------|---------|
+Table header should be before the row template
+Row template (cell) with left-alignment: |<------|
+Row template (cell) with right-alignment: |------>|
+Row template (cell) with center-alignment: |>------<|
+Row template (cell) with justified content: |<------>|
+Row template (cell) column background-color: |---<red>---|
+Cell color background-color: |<red> some content |
+	or: | some content <red>|
+Table caption background-color: |[<red> Table caption text ]|
+	or: Table caption background-color: |[ Table caption text ]<red>|
 
 
 
@@ -88,6 +108,15 @@ Two-entries table:
 | entry 2 || cell 2A  | cell 2B  |
 | entry 3 || cell 3A  | cell 3B  |
 
+or:
+
+|[ Table caption text          ]|
+|         | header 1 | header 2 |
+|:-------:|----------|----------|
+| entry 1 | cell 1A  | cell 1B  |
+| entry 2 | cell 2A  | cell 2B  |
+| entry 3 | cell 3A  | cell 3B  |
+
 
 
 Multi-line table:
@@ -107,6 +136,12 @@ Multi-line table:
 | ...      | ...      | ...      |
 
 
+
+## Spreadsheet-like feature inside tables
+
+? Computed spreadsheet-like cell: |=(formula) |
+? Row template (cell) computed spreadsheet-like column: |---=(formula)---|
+? Computed spreadsheet-like row (starts with): |=(formula)|
 
 
 
