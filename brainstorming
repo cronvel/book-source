@@ -73,9 +73,9 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 ✅ Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
-Row template/header-body separator: |----------|--------|---------|
+✅ Row template/header-body separator: |----------|--------|---------|
 Optional row separator: |----------|--------|---------|
-Table header should be before the row template
+✅ Table header should be before the row template
 ✅ Row template (cell) with left-alignment: |<------|
 ✅ Row template (cell) with right-alignment: |------>|
 ✅ Row template (cell) with center-alignment: |>------<|
@@ -87,11 +87,11 @@ Table caption background-color: |[<red> Table caption text ]|
 	or: Table caption background-color: |[ Table caption text ]<red>|
 	or: Table caption background-color: |[ Table caption text ]|<red>
 Row background-color (at the end of the row): |<red>
-Table row header: | header name :|
+✅ Table row header: | header name :|
 
 
 
-Regular table:
+✅ Regular table:
 
 |[ Table caption text           ]|
 | header 1 | header 2 | header 3 |
@@ -102,23 +102,14 @@ Regular table:
 
 
 
-Two-entries table:
+✅ Two-entries table:
 
 |[ Table caption text           ]|
-|         || header 1 | header 2 |
-|---------||----------|----------|
-| entry 1 || cell 1A  | cell 1B  |
-| entry 2 || cell 2A  | cell 2B  |
-| entry 3 || cell 3A  | cell 3B  |
-
-or:
-
-|[ Table caption text          ]|
-|         | header 1 | header 2 |
-|:-------:|----------|----------|
-| entry 1 | cell 1A  | cell 1B  |
-| entry 2 | cell 2A  | cell 2B  |
-| entry 3 | cell 3A  | cell 3B  |
+|          | header 1 | header 2 |
+|----------|----------|----------|
+| entry 1 :| cell 1A  | cell 1B  |
+| entry 2 :| cell 2A  | cell 2B  |
+| entry 3 :| cell 3A  | cell 3B  |
 
 
 

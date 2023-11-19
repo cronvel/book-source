@@ -30,6 +30,10 @@
 	line-height: 1.7;
 }
 
+.book-source table tbody tr th {
+	background-color: #e8fad6;
+	border-right: 2px solid #c6cbd1;
+}
 
 
 
