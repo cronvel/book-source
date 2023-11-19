@@ -85,6 +85,9 @@ Cell color background-color: |<red> some content |
 	or: | some content <red>|
 Table caption background-color: |[<red> Table caption text ]|
 	or: Table caption background-color: |[ Table caption text ]<red>|
+	or: Table caption background-color: |[ Table caption text ]|<red>
+Row background-color (at the end of the row): |<red>
+Table row header: | header name :|
 
 
 
