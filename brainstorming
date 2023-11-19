@@ -72,14 +72,14 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 
-Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
+✅ Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
 Row template/header-body separator: |----------|--------|---------|
 Optional row separator: |----------|--------|---------|
 Table header should be before the row template
-Row template (cell) with left-alignment: |<------|
-Row template (cell) with right-alignment: |------>|
-Row template (cell) with center-alignment: |>------<|
-Row template (cell) with justified content: |<------>|
+✅ Row template (cell) with left-alignment: |<------|
+✅ Row template (cell) with right-alignment: |------>|
+✅ Row template (cell) with center-alignment: |>------<|
+✅ Row template (cell) with justified content: |<------>|
 Row template (cell) column background-color: |---<red>---|
 Cell color background-color: |<red> some content |
 	or: | some content <red>|
