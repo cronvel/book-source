@@ -70,7 +70,7 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 ✅ Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
-Multiline table caption (follow-up caption line): |[ ... follow-up text ]|
+✅ Multiline table caption (follow-up caption line): |[ ... follow-up text ]|
 ✅ Template row/header-body separator: |----------|--------|---------|
 Optional row separator: |----------|--------|---------|
 ✅ Table header should be before the row template
@@ -81,10 +81,9 @@ Optional row separator: |----------|--------|---------|
 ✅ Template row (cell) defining a head column: |-------:|
 Template row (cell) column background-color: |---<red>---|
 ✅ Cell color background-color: |<red> some content |
-Table caption background-color: |[<red> Table caption text ]|
-	or: Table caption background-color: |[ Table caption text ]<red>|
-	or: Table caption background-color: |[ Table caption text ]|<red>
-Row background-color (at the end of the row): |<red>
+✅ Table caption background-color: |[ Table caption text ]|<red>
+✅ Row background-color (at the end of the row): |<red>
+Vertical separator (the right-bar is doubled): ||
 
 
 
