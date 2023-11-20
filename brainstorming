@@ -83,7 +83,8 @@ Optional row separator: |----------|--------|---------|
 ✅ Cell color background-color: |<red> some content |
 ✅ Table caption background-color: |[ Table caption text ]|<red>
 ✅ Row background-color (at the end of the row): |<red>
-✅ Vertical separator (the right-bar is doubled, inside template row, or any cell): ||
+✅ Thick column separator (the right-bar is doubled, inside template row, or any cell): ||
+Thick row separator (two row separators): |----------|--------|---------|
 
 
 
