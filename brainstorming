@@ -73,21 +73,21 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 ✅ Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
-✅ Row template/header-body separator: |----------|--------|---------|
+✅ Template row/header-body separator: |----------|--------|---------|
 Optional row separator: |----------|--------|---------|
 ✅ Table header should be before the row template
-✅ Row template (cell) with left-alignment: |<------|
-✅ Row template (cell) with right-alignment: |------>|
-✅ Row template (cell) with center-alignment: |>------<|
-✅ Row template (cell) with justified content: |<------>|
-Row template (cell) column background-color: |---<red>---|
+✅ Template row (cell) defining a left-alignment column: |<------|
+✅ Template row (cell) defining a right-alignment column: |------>|
+✅ Template row (cell) defining a center-alignment column: |>------<|
+✅ Template row (cell) defining a justified content column: |<------>|
+✅ Template row (cell) defining a head column: |-------:|
+Template row (cell) column background-color: |---<red>---|
 Cell color background-color: |<red> some content |
 	or: | some content <red>|
 Table caption background-color: |[<red> Table caption text ]|
 	or: Table caption background-color: |[ Table caption text ]<red>|
 	or: Table caption background-color: |[ Table caption text ]|<red>
 Row background-color (at the end of the row): |<red>
-✅ Table row header: | header name :|
 
 
 
@@ -134,7 +134,7 @@ Multi-line table:
 ## Spreadsheet-like feature inside tables
 
 ? Computed spreadsheet-like cell: |=(formula) |
-? Row template (cell) computed spreadsheet-like column: |---=(formula)---|
+? Template row (cell) computed spreadsheet-like column: |---=(formula)---|
 ? Computed spreadsheet-like row (starts with): |=(formula)|
 
 

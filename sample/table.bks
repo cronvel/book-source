@@ -14,9 +14,9 @@
 
 |[This is a table caption!             ]|
 |         | Head A  | Head B  | Head C  |
-|---------|-------->|<--------|>-------<|
-| Row 1  :| Cell 1A | Cell 1B | Cell 1C |
-| Row 2  :| more content more content more content  | Cell 2B | Cell 2C |
-| Row 3  :| Cell 3A | blah blih blah blooh | Cell 3C |
-| Row 4  :| Cell 4A | Cell 4B | wai no~hohon~! |
+|--------:|-------->|<--------|>-------<|
+| Row 1   | Cell 1A | Cell 1B | Cell 1C |
+| Row 2   | more content more content more content  | Cell 2B | Cell 2C |
+| Row 3   | Cell 3A | blah blih blah blooh | Cell 3C |
+| Row 4   | Cell 4A | Cell 4B | wai no~hohon~! |
 
