@@ -1,22 +1,31 @@
 
-| cell 1A | cell 1B | cell 1C |
-| cell 2A | cell 2B | cell 2C |
-| cell 3A | cell 3B | cell 3C |
-| cell 4A | cell 4B | cell 4C |
+| cell 1A || cell 1B | cell 1C |
+| cell 2A || cell 2B | cell 2C |
+| cell 3A || cell 3B | cell 3C |
+| cell 4A || cell 4B | cell 4C |
 
 
 |[ This is a table caption!  ]|
-| cell 1A | cell 1B | cell 1C |
-| cell 2A | cell 2B | cell 2C |
-| cell 3A | cell 3B | cell 3C |
-| cell 4A | cell 4B | cell 4C |
+| cell 1A | cell 1B || cell 1C |
+| cell 2A | cell 2B || cell 2C |
+| cell 3A | cell 3B || cell 3C |
+| cell 4A | cell 4B || cell 4C |
 
 
 |[ This is a table caption!            ]|
 |         | Head A  | Head B  | Head C  |
-|--------:|-------->|<--------|>-------<|
+|--------:|-------->||<-------|>-------<|
 | Row 1   | Cell 1A | Cell 1B | Cell 1C |
 | Row 2   | more content more content more content  | Cell 2B | Cell 2C |
 | Row 3   | Cell 3A | blah blih blah blooh | Cell 3C |
 | Row 4   | Cell 4A | Cell 4B | wai no~hohon~! |
 
+
+|[ This is a table caption!            ]|<red>
+|[ ... spanning over *2 lines*!        ]|
+|         | Head A  | Head B  | Head C  |
+|--------:|-------->|<-<teal>-||>------<|
+| Row 1   | Cell 1A | Cell 1B | Cell 1C |
+| Row 2   | more content more content more content  | Cell 2B | Cell 2C |
+| Row 3   |<pink> Cell 3A | blah blih blah blooh | Cell 3C |<cyan>
+| Row 4   | Cell 4A | Cell 4B | wai no~hohon~! |

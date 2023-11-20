@@ -37,7 +37,7 @@
 ✅ Horizontal rule + Clear float (3 or more - at both side): ---<>---
 
 ✅ Custom style: [text]<style>
-   (where style can be a color like red, green, black, or other style like bold, italic, oblique, separated by a semi-colon ";")
+   (where style can be a color like red, green, black, or other style like bold, italic, oblique, separated by comma ",")
    (generate a <span>)
 
 ✅ Title tooltip: [text]{title text}
@@ -79,11 +79,11 @@ Optional row separator: |----------|--------|---------|
 ✅ Template row (cell) defining a center-alignment column: |>------<|
 ✅ Template row (cell) defining a justified content column: |<------>|
 ✅ Template row (cell) defining a head column: |-------:|
-Template row (cell) column background-color: |---<red>---|
+✅ Template row (cell) column background-color: |---<red>---|
 ✅ Cell color background-color: |<red> some content |
 ✅ Table caption background-color: |[ Table caption text ]|<red>
 ✅ Row background-color (at the end of the row): |<red>
-Vertical separator (the right-bar is doubled): ||
+✅ Vertical separator (the right-bar is doubled, inside template row, or any cell): ||
 
 
 
