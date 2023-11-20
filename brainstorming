@@ -45,9 +45,6 @@
 ✅ Link: [link text](href)
 ✅ Link+Title: [link text]{title text}(href)
 
-Hover tooltip text block (support new lines inside the {}): ?[text]{some block of text}
-Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
-
 ✅ Inline image with alt text: ![alt text](href)
 ✅ Emoji and special characters: ![emoji-name]
 	pre-defined image: ![pre-defined-image-name]
@@ -73,6 +70,7 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 ✅ Table caption (no space between the pipe and the bracket chars): |[ Table caption text ]|
+Multiline table caption (follow-up caption line): |[ ... follow-up text ]|
 ✅ Template row/header-body separator: |----------|--------|---------|
 Optional row separator: |----------|--------|---------|
 ✅ Table header should be before the row template
@@ -82,8 +80,7 @@ Optional row separator: |----------|--------|---------|
 ✅ Template row (cell) defining a justified content column: |<------>|
 ✅ Template row (cell) defining a head column: |-------:|
 Template row (cell) column background-color: |---<red>---|
-Cell color background-color: |<red> some content |
-	or: | some content <red>|
+✅ Cell color background-color: |<red> some content |
 Table caption background-color: |[<red> Table caption text ]|
 	or: Table caption background-color: |[ Table caption text ]<red>|
 	or: Table caption background-color: |[ Table caption text ]|<red>
@@ -106,10 +103,10 @@ Row background-color (at the end of the row): |<red>
 
 |[ Table caption text           ]|
 |          | header 1 | header 2 |
-|----------|----------|----------|
-| entry 1 :| cell 1A  | cell 1B  |
-| entry 2 :| cell 2A  | cell 2B  |
-| entry 3 :| cell 3A  | cell 3B  |
+|---------:|----------|----------|
+| entry 1  | cell 1A  | cell 1B  |
+| entry 2  | cell 2A  | cell 2B  |
+| entry 3  | cell 3A  | cell 3B  |
 
 
 
@@ -151,6 +148,9 @@ Column break (close/open "column" custom tags): |||
 
 
 ## Misc:
+
+Hover tooltip text block (support new lines inside the {}): ?[text]{some block of text}
+Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
 
 Introduce a todo list item: -[ ]
 Introduce a todo list item done: -[x]
