@@ -69,19 +69,22 @@
 	padding: 6px 13px;
 }
 
-.book-source table th.column-head {
+.book-source table th:not([scope]) {
+	background-color: #d6d6d6;
+	border-top: 1px solid #c6cbd1;
+	border-bottom: 2px solid #c6cbd1;
+	border-right: 2px solid #c6cbd1;
+}
+
+.book-source table th[scope="column"] {
 	background-color: #fae8d6;
 	border-top: 1px solid #c6cbd1;
 	border-bottom: 2px solid #c6cbd1;
 }
 
-.book-source table th.row-head {
+.book-source table th[scope="row"] {
 	background-color: #e8fad6;
 	border-right: 2px solid #c6cbd1;
-}
-
-.book-source table th.column-head.row-head {
-	background-color: #d6d6d6;
 }
 
 .book-source table tbody tr {
