@@ -73,8 +73,9 @@ Block multimedia: !=[alt text](href)(media-type)
 ✅ Multiline table caption (follow-up caption line): |[ ... follow-up text ]|
 ✅ Template row/header-body separator (optional): |----------|--------|---------|
 ✅ Multiline table head row (multiple lines before the row/body separator)
-Optional row separator: |----------|--------|---------|
-Multiline rows (all rows should be separated by a row separator)
+✅ Optional row separator: |----------|--------|---------|
+✅ Multiline rows (all rows should be separated by a row separator)
+✅ Multiline single row is done by enforcing a trailing row separator
 ✅ Table header should be before the row template
 ✅ Template row (cell) defining a left-alignment column: |<------|
 ✅ Template row (cell) defining a right-alignment column: |------>|
