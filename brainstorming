@@ -89,7 +89,9 @@ Block multimedia: !=[alt text](href)(media-type)
 ✅ Thick column separator (the right-bar is doubled, inside template row, or any cell): ||
 ✅ Thick row separator: |==========|========|=========|
 ✅ Colspan (less cell in a row, use bar matching the template row to know which cell have colspan)
-Rowspan (only one hyphen after and before the bar, with space in between: |-      -|
+✅ Rowspan (only one hyphen after and before the bar, with space in between: |-      -|
+✅ Rowspan + Colspan combo
+
 
 
 ✅ Regular table:

@@ -101,3 +101,34 @@
 | Row 1    | Cell 1A  + Cell 1B  + Cell 1C  |
 | 2nd line |                                |
 
+
+
+|          | Head A   | Head B     Head C   |
+|---------:|--<pink>->|<--<red>--|<-<teal>->|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+| 2nd line |          |          |          |
+|----------|-        -|----------|----------|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+|          |          |          | extra    |
+|----------|----------|-        -|-        -|
+| 2nd line |          |          |          |
+|----------|----------|----------|-        -|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+| 2nd line |          |          |          |
+
+
+
+|          | Head A   | Head B     Head C   | Head A   | Head A   | Head A   |
+|---------:|--<pink>->|<--<red>--|<-<teal>->|--<pink>->|<--<red>--|<-<teal>->|
+| Row 1    | Cell 1A    Cell 1B  | Cell 1C  | Cell 1A    Cell 1B  | Cell 1C  |
+| 2nd line |                     |          |                     |          |
+|----------|-                   -|----------|-                   -|----------|
+| Row 1    | Cell 2A    Cell 2B  | Cell 1C  | Cell 2A    Cell 2B  | Cell 1C  |
+|          |                     | extra    |                     | extra    |
+|----------|----------|----------|-        -|----------|----------|-        -|
+| 2nd line |          |          |          |          |          |          |
+|----------|----------|----------|-        -|----------|----------|-        -|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  | Cell 1A  | Cell 1B  | Cell 1C  |
+| 2nd line |          |          |          |          |          |          |
+
+
