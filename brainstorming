@@ -87,7 +87,7 @@ Block multimedia: !=[alt text](href)(media-type)
 ✅ Table caption background-color: |[ Table caption text ]|<red>
 ✅ Row background-color (at the end of the row): |<red>
 ✅ Thick column separator (the right-bar is doubled, inside template row, or any cell): ||
-Thick row separator (two row separators): |----------|--------|---------|
+Thick row separator: |==========|========|=========|
 Colspan
 Rowspan
 
