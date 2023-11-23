@@ -1,4 +1,10 @@
 
+| cell 1A | cell 1B | cell 1C |
+| cell 2A | cell 2B | cell 2C |
+| cell 3A | cell 3B | cell 3C |
+| cell 4A | cell 4B | cell 4C |
+
+
 | cell 1A || cell 1B | cell 1C |
 | cell 2A || cell 2B | cell 2C |
 | cell 3A || cell 3B | cell 3C |
@@ -57,4 +63,41 @@
 | Row 1    | Cell 1A  | Cell 1B  | Cell 1C |
 | 2nd line |          | 2nd line |         |
 
+
+|          | Head A   | Head B   | Head C  |
+|=========:|=========>|<=========|<=======>|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C |
+| 2nd line |          |          |         |
+|==========|==========|==========|=========|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C |
+|          | extra    | extra    | extra   |
+|          | content  | content  | content |
+|          | extra    | extra    | extra   |
+|          | content  | content  | content |
+|          | extra    | extra    | extra   |
+|          | content  | content  | content |
+|          | extra    | extra    | extra   |
+|          | content  | content  | content |
+|          | extra    | extra    | extra   |
+|          | content  | content  | content |
+|----------|----------|----------|---------|
+| 2nd line |          |          |         |
+|==========|==========|==========|=========|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C |
+| 2nd line |          |          |         |
+
+
+
+|          | Head A   | Head B     Head C   |
+|---------:|--<pink>->|<--<red>--|<-<teal>->|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+| 2nd line |          |          |          |
+|----------|----------|----------|----------|
+| Row 1    | Cell 1A + Cell 1B   | Cell 1C  |
+|          | having some colspan | extra    |
+|----------|----------|----------|----------|
+| 2nd line |          |          |          |
+|----------|----------|----------|----------|
+| Row 1    | Cell 1A  + Cell 1B  + Cell 1C  |
+| 2nd line |                                |
 
