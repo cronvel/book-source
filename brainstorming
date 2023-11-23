@@ -88,8 +88,8 @@ Block multimedia: !=[alt text](href)(media-type)
 ✅ Row background-color (at the end of the row): |<red>
 ✅ Thick column separator (the right-bar is doubled, inside template row, or any cell): ||
 ✅ Thick row separator: |==========|========|=========|
-✅ Colspan
-Rowspan
+✅ Colspan (less cell in a row, use bar matching the template row to know which cell have colspan)
+Rowspan (only one hyphen after and before the bar, with space in between: |-      -|
 
 
 ✅ Regular table:
@@ -114,7 +114,7 @@ Rowspan
 
 
 
-Multi-line table:
+✅ Multi-line table:
 
 |[ Multiline table caption text ]|
 |[ ... with extra line          ]|
