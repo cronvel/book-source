@@ -132,3 +132,13 @@
 | 2nd line |          |          |          |          |          |          |
 
 
+
+|[ Mixing styles ]|
+|         | Head A  | Head B  | Head C  |
+|---------|-------->|<-<red,bold>--|>-------<|
+| Row 1  :| Cell 1A | Cell 1B | Cell 1C |
+| Row 2  :| more content more content more content  | Cell 2B | Cell 2C |
+| Row 3  :| Cell 3A | blah blih blah blooh | Cell 3C |
+| Row 4  :| Cell 4A |<yellow,underline> Cell 4B | wai no~hohon~! |<cyan,italic>
+| Row 5  :| Cell 5A | Cell 5B | Cell 5C |
+
