@@ -9,30 +9,6 @@
 .book-source .italic { font-style: italic; }
 .book-source .underline { text-decoration: underline; }
 
-.book-source .text-red { color: red; }
-.book-source .text-orange { color: orange; }
-.book-source .text-yellow { color: yellow; }
-.book-source .text-green { color: green; }
-.book-source .text-teal { color: teal; }
-.book-source .text-cyan { color: cyan; }
-.book-source .text-blue { color: blue; }
-.book-source .text-indigo { color: indigo; }
-.book-source .text-purple { color: purple; }
-.book-source .text-magenta { color: magenta; }
-.book-source .text-pink { color: pink; }
-
-.book-source .bg-red { background-color: red; }
-.book-source .bg-orange { background-color: orange; }
-.book-source .bg-yellow { background-color: yellow; }
-.book-source .bg-green { background-color: green; }
-.book-source .bg-teal { background-color: teal; }
-.book-source .bg-cyan { background-color: cyan; }
-.book-source .bg-blue { background-color: blue; }
-.book-source .bg-indigo { background-color: indigo; }
-.book-source .bg-purple { background-color: purple; }
-.book-source .bg-magenta { background-color: magenta; }
-.book-source .bg-pink { background-color: pink; }
-
 .book-source .title-tooltip { cursor: help; }
 
 .book-source .clear-float { clear: both; }
