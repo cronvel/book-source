@@ -13,13 +13,36 @@
 
 .book-source .clear-float { clear: both; }
 
+
+
+/* Code */
+
 .book-source code {
-	background-color: #eee;
-	border: 1px solid #d9d9d9;
+	/*background-color: #eee;*/
+	background-color: var(--code-background-color);
+	/*border: 1px solid #d9d9d9;*/
+	border: 1px solid var(--code-border-color);
 	border-radius: 3px;
 	margin: 0 2px;
 	padding: 2px 4px;
 	line-height: 1.7;
+}
+
+.book-source pre {
+	/*background-color: #eee;*/
+	background-color: var(--code-background-color);
+	/*border: 1px solid #d9d9d9;*/
+	border: 1px solid var(--code-border-color);
+	border-radius: 3px;
+	margin: 15px 0;
+	padding: 6px 10px;
+	line-height: 1.4;
+}
+
+.book-source pre code {
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -43,35 +66,35 @@
 	color: #fff;
 	font-size: 1.1em;
 	font-weight: bold;
-	border: 1px solid #c6cbd1;
+	border: 1px solid var(--table-border-color);
 	padding: 6px 13px;
 }
 
 .book-source table th:not([scope]) {
 	background-color: #d6d6d6;
-	border-top: 1px solid #c6cbd1;
-	border-bottom: 2px solid #c6cbd1;
-	border-right: 2px solid #c6cbd1;
+	border-top: 1px solid var(--table-border-color);
+	border-bottom: 2px solid var(--table-border-color);
+	border-right: 2px solid var(--table-border-color);
 }
 
 .book-source table th[scope="column"] {
 	background-color: #fae8d6;
-	border-top: 1px solid #c6cbd1;
-	border-bottom: 2px solid #c6cbd1;
+	border-top: 1px solid var(--table-border-color);
+	border-bottom: 2px solid var(--table-border-color);
 }
 
 .book-source table th[scope="row"] {
 	background-color: #e8fad6;
-	border-right: 2px solid #c6cbd1;
+	border-right: 2px solid var(--table-border-color);
 }
 
 .book-source table tbody tr {
 	background-color: #fff;
-	border-top: 1px solid #c6cbd1;
+	border-top: 1px solid var(--table-border-color);
 }
 
 .book-source table th.row-separator, .book-source table tr.row-separator {
-	border-bottom: 6px solid #afb2b5;
+	border-bottom: 6px solid var(--table-border-color);
 }
 
 .book-source table tbody tr:nth-child(2n):not(.bg-styled) {
@@ -80,11 +103,11 @@
 
 .book-source table th, .book-source table td {
 	padding: 6px 13px;
-	border: 1px solid #dfe2e5;
+	border: 1px solid var(--table-border-color);
 }
 
 .book-source table th.column-separator, .book-source table td.column-separator {
-	border-right: 6px solid #afb2b5;
+	border-right: 6px solid var(--table-border-color);
 }
 
 .book-source table td img {
@@ -155,22 +178,6 @@
 	line-height: 1.7;
 	margin: 1em 0;
 	text-align: justify;
-}
-
-.book-source pre {
-	background-color: #eee;
-	border: 1px solid #d9d9d9;
-	border-radius: 3px;
-	margin: 15px 0;
-	padding: 6px 10px;
-	line-height: 1.4;
-}
-
-.book-source pre code {
-	background-color: #eee;
-	border: none;
-	margin: 0;
-	padding: 0;
 }
 
 .book-source mark {
