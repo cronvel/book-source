@@ -1,7 +1,7 @@
 
-/* new */
+/* New */
 
-
+/* Text */
 
 .book-source em { font-style: italic; }
 .book-source strong { font-weight: bold; }
@@ -39,7 +39,7 @@
 .book-source table caption {
 	caption-side: top;
 	text-align: center;
-	background-color: #ff8000;
+	background-color: var(--table-caption-background-color);
 	color: #fff;
 	font-size: 1.1em;
 	font-weight: bold;
