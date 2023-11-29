@@ -8,8 +8,11 @@
 .book-source .bold { font-weight: bold; }
 .book-source .italic { font-style: italic; }
 .book-source .underline { text-decoration: underline; }
-
 .book-source .title-tooltip { cursor: help; }
+
+
+
+/* Layout */
 
 .book-source .clear-float { clear: both; }
 
@@ -18,9 +21,7 @@
 /* Code */
 
 .book-source code {
-	/*background-color: #eee;*/
 	background-color: var(--code-background-color);
-	/*border: 1px solid #d9d9d9;*/
 	border: 1px solid var(--code-border-color);
 	border-radius: 3px;
 	margin: 0 2px;
@@ -29,9 +30,7 @@
 }
 
 .book-source pre {
-	/*background-color: #eee;*/
 	background-color: var(--code-background-color);
-	/*border: 1px solid #d9d9d9;*/
 	border: 1px solid var(--code-border-color);
 	border-radius: 3px;
 	margin: 15px 0;
@@ -63,7 +62,7 @@
 	caption-side: top;
 	text-align: center;
 	background-color: var(--table-caption-background-color);
-	color: #fff;
+	color: var(--table-caption-text-color);
 	font-size: 1.1em;
 	font-weight: bold;
 	border: 1px solid var(--table-border-color);
@@ -71,7 +70,7 @@
 }
 
 .book-source table th:not([scope]) {
-	background-color: #d6d6d6;
+	background-color: var(--table-both-head-color);
 	border-top: 1px solid var(--table-border-color);
 	border-bottom: 2px solid var(--table-border-color);
 	border-right: 2px solid var(--table-border-color);
