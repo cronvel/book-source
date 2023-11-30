@@ -1,6 +1,6 @@
 
 
-|[ Palette test ]|
+|[ Test palette red ]|
 |           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
 |----------:|-------|-------|-------|-------|-------|-------|-------|
 | Bright=-3 |<darkest dullest red> |<darkest duller red> |<darkest dull red> |<darkest red> |<darkest pure red> |<darkest purer red> |<darkest purest red> |
@@ -10,4 +10,188 @@
 | Bright=1  |<bright dullest red> |<bright duller red> |<bright dull red> |<bright red> |<bright pure red> |<bright purer red> |<bright purest red> |
 | Bright=2  |<brighter dullest red> |<brighter duller red> |<brighter dull red> |<brighter red> |<brighter pure red> |<brighter purer red> |<brighter purest red> |
 | Bright=3  |<brightest dullest red> |<brightest duller red> |<brightest dull red> |<brightest red> |<brightest pure red> |<brightest purer red> |<brightest purest red> |
+
+
+
+|[ Test palette orange ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest orange> |<darkest duller orange> |<darkest dull orange> |<darkest orange> |<darkest pure orange> |<darkest purer orange> |<darkest purest orange> |
+| Bright=-2 |<darker dullest orange> |<darker duller orange> |<darker dull orange> |<darker orange> |<darker pure orange> |<darker purer orange> |<darker purest orange> |
+| Bright=-1 |<dark dullest orange> |<dark duller orange> |<dark dull orange> |<dark orange> |<dark pure orange> |<dark purer orange> |<dark purest orange> |
+| Bright=0  |<dullest orange> |<duller orange> |<dull orange> |<orange> |<pure orange> |<purer orange> |<purest orange> |
+| Bright=1  |<bright dullest orange> |<bright duller orange> |<bright dull orange> |<bright orange> |<bright pure orange> |<bright purer orange> |<bright purest orange> |
+| Bright=2  |<brighter dullest orange> |<brighter duller orange> |<brighter dull orange> |<brighter orange> |<brighter pure orange> |<brighter purer orange> |<brighter purest orange> |
+| Bright=3  |<brightest dullest orange> |<brightest duller orange> |<brightest dull orange> |<brightest orange> |<brightest pure orange> |<brightest purer orange> |<brightest purest orange> |
+
+
+
+|[ Test palette yellow-orange ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest yellow-orange> |<darkest duller yellow-orange> |<darkest dull yellow-orange> |<darkest yellow-orange> |<darkest pure yellow-orange> |<darkest purer yellow-orange> |<darkest purest yellow-orange> |
+| Bright=-2 |<darker dullest yellow-orange> |<darker duller yellow-orange> |<darker dull yellow-orange> |<darker yellow-orange> |<darker pure yellow-orange> |<darker purer yellow-orange> |<darker purest yellow-orange> |
+| Bright=-1 |<dark dullest yellow-orange> |<dark duller yellow-orange> |<dark dull yellow-orange> |<dark yellow-orange> |<dark pure yellow-orange> |<dark purer yellow-orange> |<dark purest yellow-orange> |
+| Bright=0  |<dullest yellow-orange> |<duller yellow-orange> |<dull yellow-orange> |<yellow-orange> |<pure yellow-orange> |<purer yellow-orange> |<purest yellow-orange> |
+| Bright=1  |<bright dullest yellow-orange> |<bright duller yellow-orange> |<bright dull yellow-orange> |<bright yellow-orange> |<bright pure yellow-orange> |<bright purer yellow-orange> |<bright purest yellow-orange> |
+| Bright=2  |<brighter dullest yellow-orange> |<brighter duller yellow-orange> |<brighter dull yellow-orange> |<brighter yellow-orange> |<brighter pure yellow-orange> |<brighter purer yellow-orange> |<brighter purest yellow-orange> |
+| Bright=3  |<brightest dullest yellow-orange> |<brightest duller yellow-orange> |<brightest dull yellow-orange> |<brightest yellow-orange> |<brightest pure yellow-orange> |<brightest purer yellow-orange> |<brightest purest yellow-orange> |
+
+
+
+|[ Test palette yellow ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest yellow> |<darkest duller yellow> |<darkest dull yellow> |<darkest yellow> |<darkest pure yellow> |<darkest purer yellow> |<darkest purest yellow> |
+| Bright=-2 |<darker dullest yellow> |<darker duller yellow> |<darker dull yellow> |<darker yellow> |<darker pure yellow> |<darker purer yellow> |<darker purest yellow> |
+| Bright=-1 |<dark dullest yellow> |<dark duller yellow> |<dark dull yellow> |<dark yellow> |<dark pure yellow> |<dark purer yellow> |<dark purest yellow> |
+| Bright=0  |<dullest yellow> |<duller yellow> |<dull yellow> |<yellow> |<pure yellow> |<purer yellow> |<purest yellow> |
+| Bright=1  |<bright dullest yellow> |<bright duller yellow> |<bright dull yellow> |<bright yellow> |<bright pure yellow> |<bright purer yellow> |<bright purest yellow> |
+| Bright=2  |<brighter dullest yellow> |<brighter duller yellow> |<brighter dull yellow> |<brighter yellow> |<brighter pure yellow> |<brighter purer yellow> |<brighter purest yellow> |
+| Bright=3  |<brightest dullest yellow> |<brightest duller yellow> |<brightest dull yellow> |<brightest yellow> |<brightest pure yellow> |<brightest purer yellow> |<brightest purest yellow> |
+
+
+
+|[ Test palette yellow-green ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest yellow-green> |<darkest duller yellow-green> |<darkest dull yellow-green> |<darkest yellow-green> |<darkest pure yellow-green> |<darkest purer yellow-green> |<darkest purest yellow-green> |
+| Bright=-2 |<darker dullest yellow-green> |<darker duller yellow-green> |<darker dull yellow-green> |<darker yellow-green> |<darker pure yellow-green> |<darker purer yellow-green> |<darker purest yellow-green> |
+| Bright=-1 |<dark dullest yellow-green> |<dark duller yellow-green> |<dark dull yellow-green> |<dark yellow-green> |<dark pure yellow-green> |<dark purer yellow-green> |<dark purest yellow-green> |
+| Bright=0  |<dullest yellow-green> |<duller yellow-green> |<dull yellow-green> |<yellow-green> |<pure yellow-green> |<purer yellow-green> |<purest yellow-green> |
+| Bright=1  |<bright dullest yellow-green> |<bright duller yellow-green> |<bright dull yellow-green> |<bright yellow-green> |<bright pure yellow-green> |<bright purer yellow-green> |<bright purest yellow-green> |
+| Bright=2  |<brighter dullest yellow-green> |<brighter duller yellow-green> |<brighter dull yellow-green> |<brighter yellow-green> |<brighter pure yellow-green> |<brighter purer yellow-green> |<brighter purest yellow-green> |
+| Bright=3  |<brightest dullest yellow-green> |<brightest duller yellow-green> |<brightest dull yellow-green> |<brightest yellow-green> |<brightest pure yellow-green> |<brightest purer yellow-green> |<brightest purest yellow-green> |
+
+
+
+|[ Test palette green ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest green> |<darkest duller green> |<darkest dull green> |<darkest green> |<darkest pure green> |<darkest purer green> |<darkest purest green> |
+| Bright=-2 |<darker dullest green> |<darker duller green> |<darker dull green> |<darker green> |<darker pure green> |<darker purer green> |<darker purest green> |
+| Bright=-1 |<dark dullest green> |<dark duller green> |<dark dull green> |<dark green> |<dark pure green> |<dark purer green> |<dark purest green> |
+| Bright=0  |<dullest green> |<duller green> |<dull green> |<green> |<pure green> |<purer green> |<purest green> |
+| Bright=1  |<bright dullest green> |<bright duller green> |<bright dull green> |<bright green> |<bright pure green> |<bright purer green> |<bright purest green> |
+| Bright=2  |<brighter dullest green> |<brighter duller green> |<brighter dull green> |<brighter green> |<brighter pure green> |<brighter purer green> |<brighter purest green> |
+| Bright=3  |<brightest dullest green> |<brightest duller green> |<brightest dull green> |<brightest green> |<brightest pure green> |<brightest purer green> |<brightest purest green> |
+
+
+
+|[ Test palette green-blue ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest green-blue> |<darkest duller green-blue> |<darkest dull green-blue> |<darkest green-blue> |<darkest pure green-blue> |<darkest purer green-blue> |<darkest purest green-blue> |
+| Bright=-2 |<darker dullest green-blue> |<darker duller green-blue> |<darker dull green-blue> |<darker green-blue> |<darker pure green-blue> |<darker purer green-blue> |<darker purest green-blue> |
+| Bright=-1 |<dark dullest green-blue> |<dark duller green-blue> |<dark dull green-blue> |<dark green-blue> |<dark pure green-blue> |<dark purer green-blue> |<dark purest green-blue> |
+| Bright=0  |<dullest green-blue> |<duller green-blue> |<dull green-blue> |<green-blue> |<pure green-blue> |<purer green-blue> |<purest green-blue> |
+| Bright=1  |<bright dullest green-blue> |<bright duller green-blue> |<bright dull green-blue> |<bright green-blue> |<bright pure green-blue> |<bright purer green-blue> |<bright purest green-blue> |
+| Bright=2  |<brighter dullest green-blue> |<brighter duller green-blue> |<brighter dull green-blue> |<brighter green-blue> |<brighter pure green-blue> |<brighter purer green-blue> |<brighter purest green-blue> |
+| Bright=3  |<brightest dullest green-blue> |<brightest duller green-blue> |<brightest dull green-blue> |<brightest green-blue> |<brightest pure green-blue> |<brightest purer green-blue> |<brightest purest green-blue> |
+
+
+
+|[ Test palette cyan ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest cyan> |<darkest duller cyan> |<darkest dull cyan> |<darkest cyan> |<darkest pure cyan> |<darkest purer cyan> |<darkest purest cyan> |
+| Bright=-2 |<darker dullest cyan> |<darker duller cyan> |<darker dull cyan> |<darker cyan> |<darker pure cyan> |<darker purer cyan> |<darker purest cyan> |
+| Bright=-1 |<dark dullest cyan> |<dark duller cyan> |<dark dull cyan> |<dark cyan> |<dark pure cyan> |<dark purer cyan> |<dark purest cyan> |
+| Bright=0  |<dullest cyan> |<duller cyan> |<dull cyan> |<cyan> |<pure cyan> |<purer cyan> |<purest cyan> |
+| Bright=1  |<bright dullest cyan> |<bright duller cyan> |<bright dull cyan> |<bright cyan> |<bright pure cyan> |<bright purer cyan> |<bright purest cyan> |
+| Bright=2  |<brighter dullest cyan> |<brighter duller cyan> |<brighter dull cyan> |<brighter cyan> |<brighter pure cyan> |<brighter purer cyan> |<brighter purest cyan> |
+| Bright=3  |<brightest dullest cyan> |<brightest duller cyan> |<brightest dull cyan> |<brightest cyan> |<brightest pure cyan> |<brightest purer cyan> |<brightest purest cyan> |
+
+
+
+|[ Test palette blue ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest blue> |<darkest duller blue> |<darkest dull blue> |<darkest blue> |<darkest pure blue> |<darkest purer blue> |<darkest purest blue> |
+| Bright=-2 |<darker dullest blue> |<darker duller blue> |<darker dull blue> |<darker blue> |<darker pure blue> |<darker purer blue> |<darker purest blue> |
+| Bright=-1 |<dark dullest blue> |<dark duller blue> |<dark dull blue> |<dark blue> |<dark pure blue> |<dark purer blue> |<dark purest blue> |
+| Bright=0  |<dullest blue> |<duller blue> |<dull blue> |<blue> |<pure blue> |<purer blue> |<purest blue> |
+| Bright=1  |<bright dullest blue> |<bright duller blue> |<bright dull blue> |<bright blue> |<bright pure blue> |<bright purer blue> |<bright purest blue> |
+| Bright=2  |<brighter dullest blue> |<brighter duller blue> |<brighter dull blue> |<brighter blue> |<brighter pure blue> |<brighter purer blue> |<brighter purest blue> |
+| Bright=3  |<brightest dullest blue> |<brightest duller blue> |<brightest dull blue> |<brightest blue> |<brightest pure blue> |<brightest purer blue> |<brightest purest blue> |
+
+
+
+|[ Test palette violet-blue ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest violet-blue> |<darkest duller violet-blue> |<darkest dull violet-blue> |<darkest violet-blue> |<darkest pure violet-blue> |<darkest purer violet-blue> |<darkest purest violet-blue> |
+| Bright=-2 |<darker dullest violet-blue> |<darker duller violet-blue> |<darker dull violet-blue> |<darker violet-blue> |<darker pure violet-blue> |<darker purer violet-blue> |<darker purest violet-blue> |
+| Bright=-1 |<dark dullest violet-blue> |<dark duller violet-blue> |<dark dull violet-blue> |<dark violet-blue> |<dark pure violet-blue> |<dark purer violet-blue> |<dark purest violet-blue> |
+| Bright=0  |<dullest violet-blue> |<duller violet-blue> |<dull violet-blue> |<violet-blue> |<pure violet-blue> |<purer violet-blue> |<purest violet-blue> |
+| Bright=1  |<bright dullest violet-blue> |<bright duller violet-blue> |<bright dull violet-blue> |<bright violet-blue> |<bright pure violet-blue> |<bright purer violet-blue> |<bright purest violet-blue> |
+| Bright=2  |<brighter dullest violet-blue> |<brighter duller violet-blue> |<brighter dull violet-blue> |<brighter violet-blue> |<brighter pure violet-blue> |<brighter purer violet-blue> |<brighter purest violet-blue> |
+| Bright=3  |<brightest dullest violet-blue> |<brightest duller violet-blue> |<brightest dull violet-blue> |<brightest violet-blue> |<brightest pure violet-blue> |<brightest purer violet-blue> |<brightest purest violet-blue> |
+
+
+
+|[ Test palette violet ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest violet> |<darkest duller violet> |<darkest dull violet> |<darkest violet> |<darkest pure violet> |<darkest purer violet> |<darkest purest violet> |
+| Bright=-2 |<darker dullest violet> |<darker duller violet> |<darker dull violet> |<darker violet> |<darker pure violet> |<darker purer violet> |<darker purest violet> |
+| Bright=-1 |<dark dullest violet> |<dark duller violet> |<dark dull violet> |<dark violet> |<dark pure violet> |<dark purer violet> |<dark purest violet> |
+| Bright=0  |<dullest violet> |<duller violet> |<dull violet> |<violet> |<pure violet> |<purer violet> |<purest violet> |
+| Bright=1  |<bright dullest violet> |<bright duller violet> |<bright dull violet> |<bright violet> |<bright pure violet> |<bright purer violet> |<bright purest violet> |
+| Bright=2  |<brighter dullest violet> |<brighter duller violet> |<brighter dull violet> |<brighter violet> |<brighter pure violet> |<brighter purer violet> |<brighter purest violet> |
+| Bright=3  |<brightest dullest violet> |<brightest duller violet> |<brightest dull violet> |<brightest violet> |<brightest pure violet> |<brightest purer violet> |<brightest purest violet> |
+
+
+
+|[ Test palette red-violet ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest red-violet> |<darkest duller red-violet> |<darkest dull red-violet> |<darkest red-violet> |<darkest pure red-violet> |<darkest purer red-violet> |<darkest purest red-violet> |
+| Bright=-2 |<darker dullest red-violet> |<darker duller red-violet> |<darker dull red-violet> |<darker red-violet> |<darker pure red-violet> |<darker purer red-violet> |<darker purest red-violet> |
+| Bright=-1 |<dark dullest red-violet> |<dark duller red-violet> |<dark dull red-violet> |<dark red-violet> |<dark pure red-violet> |<dark purer red-violet> |<dark purest red-violet> |
+| Bright=0  |<dullest red-violet> |<duller red-violet> |<dull red-violet> |<red-violet> |<pure red-violet> |<purer red-violet> |<purest red-violet> |
+| Bright=1  |<bright dullest red-violet> |<bright duller red-violet> |<bright dull red-violet> |<bright red-violet> |<bright pure red-violet> |<bright purer red-violet> |<bright purest red-violet> |
+| Bright=2  |<brighter dullest red-violet> |<brighter duller red-violet> |<brighter dull red-violet> |<brighter red-violet> |<brighter pure red-violet> |<brighter purer red-violet> |<brighter purest red-violet> |
+| Bright=3  |<brightest dullest red-violet> |<brightest duller red-violet> |<brightest dull red-violet> |<brightest red-violet> |<brightest pure red-violet> |<brightest purer red-violet> |<brightest purest red-violet> |
+
+
+
+|[ Test palette white ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest white> |<darkest duller white> |<darkest dull white> |<darkest white> |<darkest pure white> |<darkest purer white> |<darkest purest white> |
+| Bright=-2 |<darker dullest white> |<darker duller white> |<darker dull white> |<darker white> |<darker pure white> |<darker purer white> |<darker purest white> |
+| Bright=-1 |<dark dullest white> |<dark duller white> |<dark dull white> |<dark white> |<dark pure white> |<dark purer white> |<dark purest white> |
+| Bright=0  |<dullest white> |<duller white> |<dull white> |<white> |<pure white> |<purer white> |<purest white> |
+| Bright=1  |<bright dullest white> |<bright duller white> |<bright dull white> |<bright white> |<bright pure white> |<bright purer white> |<bright purest white> |
+| Bright=2  |<brighter dullest white> |<brighter duller white> |<brighter dull white> |<brighter white> |<brighter pure white> |<brighter purer white> |<brighter purest white> |
+| Bright=3  |<brightest dullest white> |<brightest duller white> |<brightest dull white> |<brightest white> |<brightest pure white> |<brightest purer white> |<brightest purest white> |
+
+
+
+|[ Test palette gray ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest gray> |<darkest duller gray> |<darkest dull gray> |<darkest gray> |<darkest pure gray> |<darkest purer gray> |<darkest purest gray> |
+| Bright=-2 |<darker dullest gray> |<darker duller gray> |<darker dull gray> |<darker gray> |<darker pure gray> |<darker purer gray> |<darker purest gray> |
+| Bright=-1 |<dark dullest gray> |<dark duller gray> |<dark dull gray> |<dark gray> |<dark pure gray> |<dark purer gray> |<dark purest gray> |
+| Bright=0  |<dullest gray> |<duller gray> |<dull gray> |<gray> |<pure gray> |<purer gray> |<purest gray> |
+| Bright=1  |<bright dullest gray> |<bright duller gray> |<bright dull gray> |<bright gray> |<bright pure gray> |<bright purer gray> |<bright purest gray> |
+| Bright=2  |<brighter dullest gray> |<brighter duller gray> |<brighter dull gray> |<brighter gray> |<brighter pure gray> |<brighter purer gray> |<brighter purest gray> |
+| Bright=3  |<brightest dullest gray> |<brightest duller gray> |<brightest dull gray> |<brightest gray> |<brightest pure gray> |<brightest purer gray> |<brightest purest gray> |
+
+
+
+|[ Test palette black ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest black> |<darkest duller black> |<darkest dull black> |<darkest black> |<darkest pure black> |<darkest purer black> |<darkest purest black> |
+| Bright=-2 |<darker dullest black> |<darker duller black> |<darker dull black> |<darker black> |<darker pure black> |<darker purer black> |<darker purest black> |
+| Bright=-1 |<dark dullest black> |<dark duller black> |<dark dull black> |<dark black> |<dark pure black> |<dark purer black> |<dark purest black> |
+| Bright=0  |<dullest black> |<duller black> |<dull black> |<black> |<pure black> |<purer black> |<purest black> |
+| Bright=1  |<bright dullest black> |<bright duller black> |<bright dull black> |<bright black> |<bright pure black> |<bright purer black> |<bright purest black> |
+| Bright=2  |<brighter dullest black> |<brighter duller black> |<brighter dull black> |<brighter black> |<brighter pure black> |<brighter purer black> |<brighter purest black> |
+| Bright=3  |<brightest dullest black> |<brightest duller black> |<brightest dull black> |<brightest black> |<brightest pure black> |<brightest purer black> |<brightest purest black> |
+
+
 
