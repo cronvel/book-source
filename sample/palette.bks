@@ -1,0 +1,13 @@
+
+
+|[ Palette test ]|
+|           | Saturation=-3 | Saturation=-2 | Saturation=-1 | Saturation=0 | Saturation=1 | Saturation=2 | Saturation=3 |
+|----------:|-------|-------|-------|-------|-------|-------|-------|
+| Bright=-3 |<darkest dullest red> |<darkest duller red> |<darkest dull red> |<darkest red> |<darkest pure red> |<darkest purer red> |<darkest purest red> |
+| Bright=-2 |<darker dullest red> |<darker duller red> |<darker dull red> |<darker red> |<darker pure red> |<darker purer red> |<darker purest red> |
+| Bright=-1 |<dark dullest red> |<dark duller red> |<dark dull red> |<dark red> |<dark pure red> |<dark purer red> |<dark purest red> |
+| Bright=0  |<dullest red> |<duller red> |<dull red> |<red> |<pure red> |<purer red> |<purest red> |
+| Bright=1  |<bright dullest red> |<bright duller red> |<bright dull red> |<bright red> |<bright pure red> |<bright purer red> |<bright purest red> |
+| Bright=2  |<brighter dullest red> |<brighter duller red> |<brighter dull red> |<brighter red> |<brighter pure red> |<brighter purer red> |<brighter purest red> |
+| Bright=3  |<brightest dullest red> |<brightest duller red> |<brightest dull red> |<brightest red> |<brightest pure red> |<brightest purer red> |<brightest purest red> |
+
