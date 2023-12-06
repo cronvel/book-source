@@ -62,7 +62,15 @@ const string = require( 'string-kit' ) ;
 const inspectOptions = { style: 'color' , depth: 10 , outputMaxLength: 100000 } ;
 console.error( "\nStructuredText parts:" , string.inspect( inspectOptions , structuredText.parts ) ) ;
 
-var html = structuredText.toHtml( { standalone: true , standaloneCss , css , codeCss } ) ;
+var html = structuredText.toHtml( {
+		//palette: { blue: '#bbaa00' } ,
+		colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
+		sizes: { text: '18px' } ,
+		//fonts: { main: 'monospace' } ,
+	} ,
+	{ standalone: true , standaloneCss , css , codeCss }
+) ;
+
 console.error( "\nHTML:" ) ;
 console.log( html ) ;
 

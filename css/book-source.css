@@ -36,6 +36,10 @@
 	text-decoration: none;
 }
 
+.book-source a:visited {
+	color: var(--visited-link-text-color);
+}
+
 .book-source a:hover {
 	color: var(--hover-link-text-color);
 	text-decoration: underline;
