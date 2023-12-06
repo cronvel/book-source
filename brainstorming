@@ -59,6 +59,23 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 
+## Misc:
+
+✅ Start metadata part: ---[[
+✅ End of metadata part: ]]---
+
+? Hover tooltip text block (support new lines inside the {}): ?[text]{some block of text}
+? Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
+
+? Introduce a todo list item: -[ ]
+? Introduce a todo list item done: -[x]
+
+
+
+
+
+
+
 ## Tables
 
 ✅ Very simple table:
@@ -148,20 +165,6 @@ Section break (3 or more): +++
 (Clearing all columns and start over on a fresh one-column section, close/open "section" tags)
 
 Column break (close/open "column" custom tags): |||
-
-
-
-
-
-## Misc:
-
-Hover tooltip text block (support new lines inside the {}): ?[text]{some block of text}
-Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
-
-Introduce a todo list item: -[ ]
-Introduce a todo list item done: -[x]
-
-
 
 
 

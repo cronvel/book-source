@@ -29,6 +29,7 @@
 
 
 const StructuredText = require( '../lib/StructuredText.js' ) ;
+const kungFig = require( 'kung-fig' ) ;
 
 const fs = require( 'fs' ) ;
 const path = require( 'path' ) ;
@@ -53,18 +54,24 @@ catch ( error ) {
 	process.exit( 1 ) ;
 }
 
+var structuredText = StructuredText.parse( content , {
+	metadataParser: kungFig.parse
+} ) ;
+
+const string = require( 'string-kit' ) ;
+const inspectOptions = { style: 'color' , depth: 10 , outputMaxLength: 100000 } ;
+console.error( "\nStructuredText parts:" , string.inspect( inspectOptions , structuredText.parts ) ) ;
+if ( structuredText.metadata ) {
+	console.error( "\nMetadata parsed:" , string.inspect( inspectOptions , structuredText.metadata ) ) ;
+}
+
 var standaloneCss = fs.readFileSync( path.join( __dirname , '../css/standalone.css' ) , 'utf8' ) ;
 var css = fs.readFileSync( path.join( __dirname , '../css/book-source.css' ) , 'utf8' ) ;
 var codeCss = fs.readFileSync( path.join( __dirname , '../css/highlight.css' ) , 'utf8' ) ;
 
-var structuredText = StructuredText.parse( content ) ;
-const string = require( 'string-kit' ) ;
-const inspectOptions = { style: 'color' , depth: 10 , outputMaxLength: 100000 } ;
-console.error( "\nStructuredText parts:" , string.inspect( inspectOptions , structuredText.parts ) ) ;
-
 var html = structuredText.toHtml( {
 		//palette: { blue: '#bbaa00' } ,
-		colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
+		//colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
 		sizes: { text: '18px' } ,
 		//fonts: { main: 'monospace' } ,
 	} ,
