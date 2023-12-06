@@ -2,7 +2,7 @@
 /* General */
 
 .book-source {
-	font-family: Helvetica,arial,freesans,clean,sans-serif;
+	font-family: var(--main-font);
 	font-size: var(--text-size);
 	color: var(--text-color);
 	word-wrap: break-word;
@@ -26,7 +26,7 @@
 
 
 .book-source p {
-	line-height: 1.7;
+	line-height: var(--line-height-size);
 	margin: 1em 0;
 	text-align: justify;
 }
@@ -91,7 +91,7 @@
 .book-source ul li ,
 .book-source ol li ,
 .book-source dl li {
-	line-height: 1.7;
+	line-height: var(--line-height-size);
 	text-align: justify;
 }
 
@@ -131,7 +131,7 @@
 	border-radius: 3px;
 	margin: 0 2px;
 	padding: 2px 4px;
-	line-height: 1.7;
+	line-height: var(--line-height-size);
 }
 
 .book-source pre {
@@ -140,7 +140,7 @@
 	border-radius: 3px;
 	margin: 15px 0;
 	padding: 6px 10px;
-	line-height: 1.4;
+	line-height: var(--code-line-height-size);
 }
 
 .book-source pre code {
@@ -259,7 +259,7 @@
 
 @media print {
 	.book-source {
-		font-size: 9pt;
+		font-size: var(--text-size);
 	}
 
 	.book-source h1 {
@@ -274,7 +274,7 @@
 	}
 
 	.book-source p {
-		line-height: 1.5;
+		line-height: var(--line-height-printsize);
 		break-inside: auto;
 		widows: 3;
 		orphans: 3;
@@ -293,8 +293,16 @@
 	}
 
 	.book-source ul li {
-		line-height: 1.5;
+		line-height: var(--line-height-printsize);
 		break-inside: avoid-page;
+	}
+
+	.book-source code {
+		line-height: var(--line-height-printsize);
+	}
+
+	.book-source pre {
+		line-height: var(--code-line-height-printsize);
 	}
 }
 
