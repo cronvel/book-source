@@ -4,6 +4,15 @@ key1: value1
 key2: value2
 ]]---
 
+---[ theme [
+palette:
+	blue: #7788aa
+colors:
+	text: "$dark red"
+sizes:
+	text: 18px
+]]---
+
 Ok guy, let's start our story!
 We are checking paragraph detection here...
 This should be packed as only one paragraph.

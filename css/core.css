@@ -5,6 +5,7 @@
 	font-family: var(--main-font);
 	font-size: var(--text-size);
 	color: var(--text-color);
+	background-color: var(--background-color);
 	word-wrap: break-word;
 }
 

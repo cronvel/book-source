@@ -134,6 +134,12 @@ function cli() {
 		metadataParser: kungFig.parse
 	} ) ;
 
+	if ( ! isPackage && structuredText.theme && typeof structuredText.theme === 'object' ) {
+		if ( structuredText.theme && typeof structuredText.theme === 'object' ) {
+			package_.theme = structuredText.theme ;
+		}
+	}
+	
 	if ( ! package_.css ) { package_.css = {} ; }
 	else if ( typeof package_.css === 'string' ) { package_.css = { core: package_.css } ; }
 
@@ -145,12 +151,8 @@ function cli() {
 	var coreCss = fs.readFileSync( package_.css.core , 'utf8' ) ;
 	var codeCss = fs.readFileSync( package_.css.code , 'utf8' ) ;
 
-	var html = structuredText.toHtml( {
-			//palette: { blue: '#bbaa00' } ,
-			//colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
-			//sizes: { text: '18px' } ,
-			//fonts: { main: 'monospace' } ,
-		} ,
+	var html = structuredText.toHtml(
+		package_.theme ,
 		{ standalone: true , standaloneCss , coreCss , codeCss }
 	) ;
 
