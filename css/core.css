@@ -115,6 +115,10 @@
 	background-color: var(--quote2-background-color);
 }
 
+.book-source blockquote blockquote blockquote {
+	background-color: var(--quote3-background-color);
+}
+
 .book-source blockquote cite {
 	display: block;
 	text-align: right;
