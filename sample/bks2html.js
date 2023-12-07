@@ -66,8 +66,8 @@ if ( structuredText.metadata ) {
 }
 
 var standaloneCss = fs.readFileSync( path.join( __dirname , '../css/standalone.css' ) , 'utf8' ) ;
-var css = fs.readFileSync( path.join( __dirname , '../css/book-source.css' ) , 'utf8' ) ;
-var codeCss = fs.readFileSync( path.join( __dirname , '../css/highlight.css' ) , 'utf8' ) ;
+var coreCss = fs.readFileSync( path.join( __dirname , '../css/core.css' ) , 'utf8' ) ;
+var codeCss = fs.readFileSync( path.join( __dirname , '../css/code.css' ) , 'utf8' ) ;
 
 var html = structuredText.toHtml( {
 		//palette: { blue: '#bbaa00' } ,
@@ -75,7 +75,7 @@ var html = structuredText.toHtml( {
 		sizes: { text: '18px' } ,
 		//fonts: { main: 'monospace' } ,
 	} ,
-	{ standalone: true , standaloneCss , css , codeCss }
+	{ standalone: true , standaloneCss , coreCss , codeCss }
 ) ;
 
 console.error( "\nHTML:" ) ;

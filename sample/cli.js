@@ -29,10 +29,13 @@
 
 
 const StructuredText = require( '../lib/StructuredText.js' ) ;
-const kungFig = require( 'kung-fig' ) ;
 
 const fs = require( 'fs' ) ;
 const path = require( 'path' ) ;
+
+const kungFig = require( 'kung-fig' ) ;
+//const inspect = require( 'string-kit/lib/inspect.js' ).inspect ;
+//const inspectOptions = { style: 'color' , depth: 10 , outputMaxLength: 100000 } ;
 
 const cliManager = require( 'utterminal' ).cli ;
 
@@ -43,9 +46,11 @@ function cli() {
 	var args = cliManager.package( require( '../package.json' ) )
 		.app( 'Book Source' )
 		.description( "Book Source CLI." )
-		.introIfTTY
+		//.introIfTTY
+		.noIntro
 		.helpOption
 		.arg( 'source' ).string
+			.required
 			.typeLabel( '.bks or .kfg' )
 			.description( "the source file, either a Book Source file or a KFG file containing all the sources and the renderer parameters." )
 		.opt( [ 'output' , 'o' ] ).string
@@ -54,100 +59,114 @@ function cli() {
 		.run() ;
 	/* eslint-enable indent */
 
-	console.error( args ) ;
+	//console.error( args ) ;
 
-	var source , files , package_ , baseDir ,
+	var package_ , baseDir ,
+		rawContent = '' ,
+		isPackage = false ,
 		cwd = process.cwd() + '/' ,
 		extension = path.extname( args.source ).slice( 1 ) ;
 	
 	switch ( extension ) {
 		case 'json' :
-			if ( path.isAbsolute( source ) ) {
-				baseDir = path.dirname( source ) + '/' ;
-				package_ = require( source ) ;
+			isPackage = true ;
+			if ( path.isAbsolute( args.source ) ) {
+				baseDir = path.dirname( args.source ) + '/' ;
+				package_ = require( args.source ) ;
 			}
 			else {
-				baseDir = path.dirname( cwd + source ) + '/' ;
-				package_ = require( cwd + source ) ;
+				baseDir = path.dirname( cwd + args.source ) + '/' ;
+				package_ = require( cwd + args.source ) ;
 			}
 			break ;
 
 		case 'kfg' :
-			if ( path.isAbsolute( source ) ) {
-				baseDir = path.dirname( source ) + '/' ;
-				package_ = kungFig.load( source ) ;
+			isPackage = true ;
+			if ( path.isAbsolute( args.source ) ) {
+				baseDir = path.dirname( args.source ) + '/' ;
+				package_ = kungFig.load( args.source ) ;
 			}
 			else {
-				baseDir = path.dirname( cwd + source ) + '/' ;
-				package_ = kungFig.load( cwd + source ) ;
+				baseDir = path.dirname( cwd + args.source ) + '/' ;
+				package_ = kungFig.load( cwd + args.source ) ;
 			}
 			break ;
 
 		case 'bks' :
 			baseDir = cwd ;
 			package_ = {
-				sources: [ source ]
+				sources: [ args.source ]
 			} ;
 			break ;
 
 		default :
 			cliManager.displayHelp() ;
-			return ;
+			console.error( "Cannot load file with extension ." + extension ) ;
+			process.exit( 1 ) ;
+	}
+	
+	if ( ! Array.isArray( package_.sources ) || ! package_.sources.length ) {
+		console.error( "No source specified in the package." ) ;
+		process.exit( 1 ) ;
+	}
+	
+	
+	for ( let sourcePath of package_.sources ) {
+		let sourceContent ,
+			fullPath = sourcePath ;
+
+		if ( ! path.isAbsolute( fullPath ) ) { fullPath = path.join( baseDir , fullPath ) ; }
+		if ( ! path.extname( fullPath ) ) { fullPath += '.bks' ; }
+		
+		try {
+			sourceContent = fs.readFileSync( fullPath , 'utf8' ) ;
+		}
+		catch ( error ) {
+			console.error( "Error reading source file '" + sourcePath + "':" , error ) ;
+			process.exit( 1 ) ;
+		}
+
+		if ( rawContent ) { rawContent += '\n' ; }
+		rawContent += sourceContent ;
 	}
 
+	var structuredText = StructuredText.parse( rawContent , {
+		metadataParser: kungFig.parse
+	} ) ;
+
+	if ( ! package_.css ) { package_.css = {} ; }
+	else if ( typeof package_.css === 'string' ) { package_.css = { core: package_.css } ; }
+
+	if ( ! package_.css.standalone ) { package_.css.standalone = path.join( __dirname , '../css/standalone.css' ) ; }
+	if ( ! package_.css.core ) { package_.css.core = path.join( __dirname , '../css/core.css' ) ; }
+	if ( ! package_.css.code ) { package_.css.code = path.join( __dirname , '../css/code.css' ) ; }
+
+	var standaloneCss = fs.readFileSync( package_.css.standalone , 'utf8' ) ;
+	var coreCss = fs.readFileSync( package_.css.core , 'utf8' ) ;
+	var codeCss = fs.readFileSync( package_.css.code , 'utf8' ) ;
+
+	var html = structuredText.toHtml( {
+			//palette: { blue: '#bbaa00' } ,
+			//colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
+			//sizes: { text: '18px' } ,
+			//fonts: { main: 'monospace' } ,
+		} ,
+		{ standalone: true , standaloneCss , coreCss , codeCss }
+	) ;
+
+	if ( ! args.output ) {
+		console.log( html ) ;
+		return ;
+	}
+	
+	try {
+		fs.writeFileSync( args.output , html , 'utf8' ) ;
+	}
+	catch ( error ) {
+		console.error( "Error writing destination file '" + args.output + "':" , error ) ;
+		process.exit( 1 ) ;
+	}
 }
 
 cli() ;
-
-return ;
-
-
-
-const filepath = process.argv[ 2 ] ;
-
-if ( ! filepath ) {
-	console.error( "Usage is: ./" + path.basename( process.argv[ 1 ] ) + " <source-text>" ) ;
-	process.exit( 1 ) ;
-}
-
-
-
-var content = '' ;
-
-try {
-	content = fs.readFileSync( filepath , 'utf8' ) ;
-}
-catch ( error ) {
-	console.error( "Error reading file '" + filepath + "':" , error ) ;
-	process.exit( 1 ) ;
-}
-
-var structuredText = StructuredText.parse( content , {
-	metadataParser: kungFig.parse
-} ) ;
-
-const string = require( 'string-kit' ) ;
-const inspectOptions = { style: 'color' , depth: 10 , outputMaxLength: 100000 } ;
-console.error( "\nStructuredText parts:" , string.inspect( inspectOptions , structuredText.parts ) ) ;
-if ( structuredText.metadata ) {
-	console.error( "\nMetadata parsed:" , string.inspect( inspectOptions , structuredText.metadata ) ) ;
-}
-
-var standaloneCss = fs.readFileSync( path.join( __dirname , '../css/standalone.css' ) , 'utf8' ) ;
-var css = fs.readFileSync( path.join( __dirname , '../css/book-source.css' ) , 'utf8' ) ;
-var codeCss = fs.readFileSync( path.join( __dirname , '../css/highlight.css' ) , 'utf8' ) ;
-
-var html = structuredText.toHtml( {
-		//palette: { blue: '#bbaa00' } ,
-		//colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
-		sizes: { text: '18px' } ,
-		//fonts: { main: 'monospace' } ,
-	} ,
-	{ standalone: true , standaloneCss , css , codeCss }
-) ;
-
-console.error( "\nHTML:" ) ;
-console.log( html ) ;
-
-
 
