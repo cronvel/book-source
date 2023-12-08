@@ -8,7 +8,7 @@ key2: value2
 palette:
 	blue: #7788aa
 colors:
-	text: "$dark red"
+	text: %dark red
 sizes:
 	text: 18px
 ]]---

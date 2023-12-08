@@ -3,7 +3,7 @@ theme:
 	palette:
 		blue: #7788aa
 	colors:
-		text: "$dark red"
+		text: %dark red
 
 sources:
 	- book

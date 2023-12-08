@@ -71,7 +71,7 @@ var codeCss = fs.readFileSync( path.join( __dirname , '../css/code.css' ) , 'utf
 
 var html = structuredText.toHtml( {
 		//palette: { blue: '#bbaa00' } ,
-		//colors: { linkText: '$teal' , hoverLinkText: '$orange' , visitedLinkText: '$red' } ,
+		//colors: { linkText: '%teal' , hoverLinkText: '%orange' , visitedLinkText: '%red' } ,
 		sizes: { text: '18px' } ,
 		//fonts: { main: 'monospace' } ,
 	} ,
