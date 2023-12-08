@@ -32,9 +32,9 @@ This is a bad \ forced line, it doesn't work.
 #(chapter2)
 ## Chapter II: The Awakening
 
-This chapter is quite [spooky]<teal>{Brrr... It gives me the chill!}... Maybe go back to [the first chap](#chapter1)? Or are you [ready]{Sure?} for the [final chapter](#chapter3){Spoler Alert!}?
+This chapter is quite [spooky][Brrr... It gives me the chill!]<teal>... Maybe go back to [the first chap](#chapter1)? Or are you [ready][Sure?] for the [final chapter][Spoiler Alert!](#chapter3)?
 
-This is an ![some ALT text](smiling.webp){smile!} inline image!
+This is an ![some ALT text][Smile!](smiling.webp) inline image!
 
 This is a pictogram as emoji: ![cat-grin]. Nice! ![thumb-up]
 

@@ -40,17 +40,19 @@
    (where style can be a color like red, green, black, or other style like bold, italic, oblique, separated by comma ",")
    (generate a <span>)
 
-✅ Title tooltip: [text]{title text}
+✅ Title tooltip: [text][title text]
 
 ✅ Link: [link text](href)
-✅ Link+Title: [link text]{title text}(href)
+✅ Link+Title: [link text][title text](href)
 
 ✅ Inline image with alt text: ![alt text](href)
+✅ Inline image + alt text + title: ![alt text][title text](href)
 ✅ Emoji and special characters: ![emoji-name]
 	pre-defined image: ![pre-defined-image-name]
 ?	material icon: ![material-icon-name]
 ✅ Block image: !=[alt text](href)
 ✅ Block image with caption: !=[alt text][caption](href)
+✅ Block image + caption + title: !=[alt text][caption][title text](href)
 ✅ Floating left block image: !<[alt text](href)
 ✅ Floating right block image: !>[alt text](href)
 
@@ -59,21 +61,15 @@ Block multimedia: !=[alt text](href)(media-type)
 
 
 
-## Misc:
+
+
+## Metadata
 
 ✅ Start metadata part: ---[[
 ✅ End of metadata part: ]]---
 ✅ Start special metadata part (spaces around the name are possible): ---[special-name[
 	Special metadata have a meaning for the renderer, for example most implementation should support 'theme' as a special metadata.
 	E.g.: ---[ theme [
-
-? Hover tooltip text block (support new lines inside the {}): ?[text]{some block of text}
-? Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
-
-? Introduce a todo list item: -[ ]
-? Introduce a todo list item done: -[x]
-
-
 
 
 
@@ -168,6 +164,16 @@ Section break (3 or more): +++
 (Clearing all columns and start over on a fresh one-column section, close/open "section" tags)
 
 Column break (close/open "column" custom tags): |||
+
+
+
+## Misc:
+
+? Hover tooltip text block (support new lines inside the []): ?[text][[some block of text]]
+? Hover tooltip sub-document (href can point to markup, or html): ?[text](href)
+
+? Introduce a todo list item: -[ ]
+? Introduce a todo list item done: -[x]
 
 
 
