@@ -179,14 +179,35 @@ Column break (close/open "column" custom tags): |||
 
 
 
-## Name Brainstorming:
+## Name Brainstorming for a Lightweight Markup Language
 
-Book Source (.bks)
-mk2 (.mk2)
-mkx (.mkx)
+Obvious names:
+
+Book Source (.bks) (to the point, but lacks of fun)
+XTX / eXtrem TeXt (.xtx) (txt -> xtx, quite memorable, neutral+ name)
+Mµ (.mu) (MarkUp)
+LMK (.lmk) (Lightweight MarKup)
+MKX (.mkx) (Markup X)
+MKTX (.mktx) (MarKup TeXt)
 Hyper Markdown (.hmd)
-Hype (.hype)
-Blast (.blast)
-Popcorn (.pop .pcorn)
+Orthodoc (.otd) (not really cool, confusion with LibreOffice .odt)
+ArkTex / ArkTX (.arktx) (mARKup TEXt)
+CupTx (.cuptx) (marKUP TeXt)
 
+
+Abstract names:
+
+Feather / Plume (.fetr? .plume?)
+Hype (.hype) (but it's unlikely to have widespread adoption)
+Blast (.blast) (ok name, but not explicit)
+Popcorn (.pop .pcorn) (ok name, but not explicit)
+YO (.yo) (no pun, no reason, just sounds fun)
+
+
+Not available:
+
+Texy (.texy) (sounds sexy) (it's a PHP lib having the same scope than this one...)
+Litex (.litx) (Lite + Tex, because of Lightweight Markup Language, but too close to latex)
+Easy Doc / EZ Doc (.ezd) (cool, but not really available)
+xdoc (.xdoc) (similar to docx)
 
