@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "book-source-html-renderer": "^0.1.1",
     "kung-fig": "^0.67.1",
     "utterminal": "^0.6.0"
   }

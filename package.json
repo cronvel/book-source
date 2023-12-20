@@ -1,14 +1,14 @@
 {
   "name": "book-source",
-  "version": "0.1.1",
-  "description": "A lightweight markup language, inspired by Markdown",
+  "version": "0.2.0",
+  "description": "A lightweight markup language, inspired by Markdown.",
   "main": "lib/book-source.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
     "array-kit": "^0.2.6",
-    "highlight.js": "^11.9.0",
+    "palette-shade": "^0.1.1",
     "string-kit": "^0.18.0"
   },
   "scripts": {
@@ -19,7 +19,9 @@
     "url": "https://github.com/cronvel/book-source.git"
   },
   "keywords": [
+    "lightweight",
     "markup",
+    "language",
     "book",
     "source"
   ],
@@ -34,5 +36,8 @@
       2023
     ],
     "owner": "Cédric Ronvel"
+  },
+  "engines": {
+    "node": ">=14.15.0"
   }
 }

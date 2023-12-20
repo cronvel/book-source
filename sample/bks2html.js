@@ -29,11 +29,13 @@
 
 
 const bookSource = require( '..' ) ;
+const HtmlRenderer = require( 'book-source-html-renderer' ) ;
 
 const fs = require( 'fs' ) ;
 const path = require( 'path' ) ;
 
 const kungFig = require( 'kung-fig' ) ;
+
 //const inspect = require( 'string-kit/lib/inspect.js' ).inspect ;
 //const inspectOptions = { style: 'color' , depth: 10 , outputMaxLength: 100000 } ;
 
@@ -145,20 +147,25 @@ function cli() {
 
 	var standaloneCss =
 		package_.css.standalone ? fs.readFileSync( package_.css.standalone , 'utf8' ) :
-		bookSource.getBuiltinCssSync( 'standalone' ) ;
+		HtmlRenderer.getBuiltinCssSync( 'standalone' ) ;
 
 	var coreCss =
 		package_.css.core ? fs.readFileSync( package_.css.core , 'utf8' ) :
-		bookSource.getBuiltinCssSync( 'core' ) ;
+		HtmlRenderer.getBuiltinCssSync( 'core' ) ;
 
 	var codeCss =
 		package_.css.code ? fs.readFileSync( package_.css.code , 'utf8' ) :
-		bookSource.getBuiltinCssSync( 'code' ) ;
+		HtmlRenderer.getBuiltinCssSync( 'code' ) ;
 
-	var html = structuredDocument.toHtml(
-		package_.theme ,
+	var theme = ! package_.theme || typeof package_.theme !== 'object' ? new bookSource.Theme() :
+		new bookSource.Theme( package_.theme ) ;
+
+	var htmlRenderer = new HtmlRenderer(
+		theme ,
 		{ standalone: true , standaloneCss , coreCss , codeCss }
 	) ;
+
+	var html = structuredDocument.render( htmlRenderer ) ;
 
 	if ( ! args.output ) {
 		console.log( html ) ;
