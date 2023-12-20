@@ -1,9 +1,9 @@
 
 # Book Source
 
-A Lightweight Markup Language similar to Markdown.
+Book Source is a Lightweight Markup Language similar to Markdown.
 
-This lib parses Book Source and is shipped with a HTML renderer.
+This is the parser, you may want to add a renderer, like the [Book Source HTML renderer](https://github.com/cronvel/book-source-html-renderer).
 
 New renderers can easily be created.
 
