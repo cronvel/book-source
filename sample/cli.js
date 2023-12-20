@@ -28,7 +28,7 @@
 
 
 
-const StructuredText = require( '../lib/StructuredText.js' ) ;
+const bookSource = require( '..' ) ;
 
 const fs = require( 'fs' ) ;
 const path = require( 'path' ) ;
@@ -130,7 +130,7 @@ function cli() {
 		rawContent += sourceContent ;
 	}
 
-	var structuredText = StructuredText.parse( rawContent , {
+	var structuredText = bookSource.parse( rawContent , {
 		metadataParser: kungFig.parse
 	} ) ;
 
