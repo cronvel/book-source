@@ -1,6 +1,6 @@
 {
   "name": "book-source",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A lightweight markup language, inspired by Markdown.",
   "main": "lib/book-source.js",
   "directories": {
