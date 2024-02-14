@@ -36,7 +36,7 @@ describe( "Nested inline markup" , function() {
 	
 	it( "emphasis and backslash" , () => {
 		var doc = bookSource.parse( "*Emphasis with \\* char*" ) ;
-		log( "%[10]Y" , doc.parts ) ;
+		//log( "%[10]Y" , doc.parts ) ;
 		expect( doc.parts ).to.be.like( [
 			{
 				type: "paragraph" ,
@@ -44,7 +44,93 @@ describe( "Nested inline markup" , function() {
 					{
 						type: "emphasisText" ,
 						level: 1 ,
-						text: "Emphasis with * char"
+						parts: [
+							{
+								type: "text" ,
+								text: "Emphasis with * char"
+							}
+						]
+					}
+				]
+			}
+		] ) ;
+	} ) ;
+
+	it( "decorated text and backslash" , () => {
+		var doc = bookSource.parse( "_Decorated text with \\* char_" ) ;
+		//log( "%[10]Y" , doc.parts ) ;
+		expect( doc.parts ).to.be.like( [
+			{
+				type: "paragraph" ,
+				parts: [
+					{
+						type: "decoratedText" ,
+						level: 1 ,
+						underline: true ,
+						parts: [
+							{
+								type: "text" ,
+								text: "Decorated text with * char"
+							}
+						]
+					}
+				]
+			}
+		] ) ;
+	} ) ;
+
+	it( "styled text and backslash" , () => {
+		var doc = bookSource.parse( "[Styled text with \\* char]<blue>" ) ;
+		//log( "%[10]Y" , doc.parts ) ;
+		expect( doc.parts ).to.be.like( [
+			{
+				type: "paragraph" ,
+				parts: [
+					{
+						type: "styledText" ,
+						style: {
+							backgroundColor: null ,
+							bold: null ,
+							italic: null ,
+							underline: null ,
+							textColor: {
+								baseName: "blue" ,
+								lightnessLevel: 0 ,
+								opacityLevel: 0 ,
+								saturationLevel: 0 ,
+								shadeRate: 0 ,
+								tintRate: 0 ,
+								toneRate: 0
+							}
+						} ,
+						parts: [
+							{
+								type: "text" ,
+								text: "Styled text with * char"
+							}
+						]
+					}
+				]
+			}
+		] ) ;
+	} ) ;
+
+	it( "link and backslash" , () => {
+		var doc = bookSource.parse( "[Link with \\* char](example.com/welcome)" ) ;
+		//log( "%[10]Y" , doc.parts ) ;
+		expect( doc.parts ).to.be.like( [
+			{
+				type: "paragraph" ,
+				parts: [
+					{
+						type: "link" ,
+						href: "example.com/welcome" ,
+						parts: [
+							{
+								type: "text" ,
+								text: "Link with * char"
+							}
+						]
 					}
 				]
 			}
