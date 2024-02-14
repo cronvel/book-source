@@ -1,4 +1,7 @@
 
-A text with a [style]<bg:green>!
+A [text]<blue> with a [style]<bg:green>!
 
 A text with a [another style]<bold,italic,underline>!
+
+[Once upon a time]<blue>...
+

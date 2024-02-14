@@ -32,8 +32,23 @@ const bookSource = require( '..' ) ;
 
 
 
-describe( "..." , function() {
+describe( "Nested inline markup" , function() {
 	
-	it( "..." ) ;
+	it( "emphasis and backslash" , () => {
+		var doc = bookSource.parse( "*Emphasis with \\* char*" ) ;
+		log( "%[10]Y" , doc.parts ) ;
+		expect( doc.parts ).to.be.like( [
+			{
+				type: "paragraph" ,
+				parts: [
+					{
+						type: "emphasisText" ,
+						level: 1 ,
+						text: "Emphasis with * char"
+					}
+				]
+			}
+		] ) ;
+	} ) ;
 } ) ;
 
