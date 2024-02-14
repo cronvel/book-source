@@ -33,6 +33,119 @@ const bookSource = require( '..' ) ;
 
 
 describe( "Nested inline markup" , function() {
+
+	it( "Nested with many depth" , () => {
+		var doc = bookSource.parse( "[[Nesting]<magenta> things to [**another** *level*...]<yellow>]<bg:light blue>" ) ;
+		//log( "%[10l50000]Y" , doc.parts ) ;
+		expect( doc.parts ).to.be.like( [
+			{
+				type: "paragraph" ,
+				parts: [
+					{
+						type: "styledText" ,
+						style: {
+							textColor: null ,
+							bold: null ,
+							italic: null ,
+							underline: null ,
+							backgroundColor: {
+								baseName: "blue" ,
+								lightnessLevel: 1 ,
+								opacityLevel: 0 ,
+								saturationLevel: -1 ,
+								shadeRate: 0 ,
+								tintRate: 0 ,
+								toneRate: 0
+							}
+						} ,
+						parts: [
+							{
+								type: "styledText" ,
+								style: {
+									backgroundColor: null ,
+									bold: null ,
+									italic: null ,
+									underline: null ,
+									textColor: {
+										baseName: "magenta" ,
+										lightnessLevel: 0 ,
+										opacityLevel: 0 ,
+										saturationLevel: 0 ,
+										shadeRate: 0 ,
+										tintRate: 0 ,
+										toneRate: 0
+									}
+								} ,
+								parts: [
+									{
+										type: "text" ,
+										text: "Nesting"
+									}
+                                ]
+							} ,
+							{
+								type: "text" ,
+								text: " things to "
+							} ,
+							{
+								type: "styledText" ,
+								style: {
+									backgroundColor: null ,
+									bold: null ,
+									italic: null ,
+									underline: null ,
+									textColor: {
+										baseName: "yellow" ,
+										lightnessLevel: 0 ,
+										opacityLevel: 0 ,
+										saturationLevel: 0 ,
+										shadeRate: 0 ,
+										tintRate: 0 ,
+										toneRate: 0
+									}
+								} ,
+								parts: [
+									{
+										type: "emphasisText" ,
+										level: 2 ,
+										parts: [
+											{
+												type: "text" ,
+												text: "another"
+											}
+										]
+									} ,
+									{
+										type: "text" ,
+										text: " "
+									} ,
+									{
+										type: "emphasisText" ,
+										level: 1 ,
+										parts: [
+											{
+												type: "text" ,
+												text: "level"
+											}
+										]
+									} ,
+									{
+										type: "text" ,
+										text: "..."
+									} ,
+                                ]
+							} ,
+						]
+					}
+				]
+			}
+		] ) ;
+	} ) ;
+} ) ;
+
+
+
+describe( "Backslash inside inline markup" , function() {
 	
 	it( "emphasis and backslash" , () => {
 		var doc = bookSource.parse( "*Emphasis with \\* char*" ) ;

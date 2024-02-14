@@ -135,7 +135,7 @@ function cli() {
 	var structuredDocument = bookSource.parse( rawContent , {
 		metadataParser: kungFig.parse
 	} ) ;
-	console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ;
+	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ;
 
 	if ( ! isPackage && structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
 		if ( structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
