@@ -5,3 +5,5 @@ Now we revert it: [this is *blue*]<blue>!
 
 [[Nesting]<magenta> things to [**another** *level*...]<yellow>]<bg:light blue>
 
+## Some *title* with [*style*]<red>
+
