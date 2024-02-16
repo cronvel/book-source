@@ -160,6 +160,7 @@ function cli() {
 	
 	if ( ! args.output ) {
 		console.log( quickMarkup ) ;
+		//console.log( JSON.stringify( quickMarkup ) ) ;
 		return ;
 	}
 	
