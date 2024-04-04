@@ -31,6 +31,8 @@
 const bookSource = require( '..' ) ;
 const HtmlRenderer = require( 'book-source-html-renderer' ) ;
 
+const highlight = require( 'highlight.js' ) ;
+
 const fs = require( 'fs' ) ;
 const path = require( 'path' ) ;
 
@@ -163,7 +165,13 @@ function cli() {
 
 	var htmlRenderer = new HtmlRenderer(
 		theme ,
-		{ standalone: true , standaloneCss , coreCss , codeCss }
+		{
+			standalone: true ,
+			standaloneCss ,
+			coreCss ,
+			codeCss ,
+			codeHighlighter: ( text , lang ) => highlight.highlight( text , { language: lang } ).value
+		}
 	) ;
 
 	var html = structuredDocument.render( htmlRenderer ) ;
