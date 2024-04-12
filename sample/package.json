@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "book-source-html-renderer": "^0.1.2",
-    "book-source-quickmarkup-renderer": "^0.1.1",
+    "book-source-html-renderer": "^0.3.2",
+    "book-source-quickmarkup-renderer": "^0.2.1",
     "highlight.js": "^11.9.0",
     "kung-fig": "^0.67.1",
     "terminal-kit": "^3.0.1",
