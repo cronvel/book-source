@@ -139,6 +139,9 @@ function cli() {
 	} ) ;
 	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ;
 
+	structuredDocument.postProcessText( [ 'french-typo' ] ) ;
+	//console.error( JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
+
 	if ( ! isPackage && structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
 		if ( structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
 			package_.theme = structuredDocument.theme ;
