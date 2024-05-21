@@ -139,7 +139,15 @@ function cli() {
 	} ) ;
 	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ;
 
-	structuredDocument.postProcessText( [ 'french-typo' ] ) ;
+	var nbspToSharp = part => {
+		//console.error( "BF:" , JSON.stringify( part.text ) ) ;
+		part.text = part.text.replace( new RegExp( String.fromCharCode( 0xa0 ) , 'g' ) , '#' ) ;
+		//console.error( "AFT:" , JSON.stringify( part.text ) ) ;
+	}
+
+	structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' ] ) ;
+	//structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' , nbspToSharp ] ) ;
+	//structuredDocument.postProcessText( [ 'french-typo' , nbspToSharp ] ) ;
 	//console.error( JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
 
 	if ( ! isPackage && structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
