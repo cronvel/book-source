@@ -142,3 +142,20 @@
 | Row 4  :| Cell 4A |<yellow,underline> Cell 4B | wai no~hohon~! |<cyan,italic>
 | Row 5  :| Cell 5A | Cell 5B | Cell 5C |
 
+
+
+|          | Head A   | Head B     Head C   |
+|---------:|----------|----------|----------|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+| 2nd line |          |          |          |
+|----------|----------|----------|----------|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+|          |          |          | extra    |
+|----------|----------|-        -|----------|
+| 2nd line |          |          |          |
+|----------|----------|----------|----------|
+| Row 1    | Cell 1A  | Cell 1B  | Cell 1C  |
+| 2nd line |          |          |          |
+
+
+
