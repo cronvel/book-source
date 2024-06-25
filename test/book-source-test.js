@@ -56,7 +56,8 @@ describe( "Nested inline markup" , function() {
 								shadeRate: 0 ,
 								tintRate: 0 ,
 								toneRate: 0
-							}
+							} ,
+							fx: null
 						} ,
 						parts: [
 							{
@@ -74,7 +75,8 @@ describe( "Nested inline markup" , function() {
 										shadeRate: 0 ,
 										tintRate: 0 ,
 										toneRate: 0
-									}
+									} ,
+									fx: null
 								} ,
 								parts: [
 									{
@@ -102,7 +104,8 @@ describe( "Nested inline markup" , function() {
 										shadeRate: 0 ,
 										tintRate: 0 ,
 										toneRate: 0
-									}
+									} ,
+									fx: null
 								} ,
 								parts: [
 									{
@@ -214,7 +217,8 @@ describe( "Backslash inside inline markup" , function() {
 								shadeRate: 0 ,
 								tintRate: 0 ,
 								toneRate: 0
-							}
+							} ,
+							fx: null
 						} ,
 						parts: [
 							{
