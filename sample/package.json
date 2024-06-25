@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "book-source-html-renderer": "^0.3.3",
+    "book-source-html-renderer": "^0.3.7",
     "book-source-quickmarkup-renderer": "^0.2.1",
     "highlight.js": "^11.9.0",
     "kung-fig": "^0.67.3",

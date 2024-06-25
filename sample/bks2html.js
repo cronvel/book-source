@@ -137,7 +137,7 @@ function cli() {
 	var structuredDocument = bookSource.parse( rawContent , {
 		metadataParser: kungFig.parse
 	} ) ;
-	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ;
+	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
 
 	var nbspToSharp = part => {
 		//console.error( "BF:" , JSON.stringify( part.text ) ) ;
