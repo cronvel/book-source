@@ -40,7 +40,7 @@
    (where style can be a color like red, green, black, or other style like bold, italic, oblique, separated by comma ",")
    (generate a <span>)
 
-✅ Title tooltip: [text][title text]
+✅ Title/Hint tooltip: [text][title text]
 
 ✅ Link: [link text](href)
 ✅ Link+Title: [link text][title text](href)
