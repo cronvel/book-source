@@ -3,5 +3,8 @@ Some [text with hint][Secret message !]!
 
 Some [link with hint][Another secret !](http://example.com)!
 
+Some ?[text with infotip][Some text in an infotip]!
+
+
 
 
