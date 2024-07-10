@@ -53,6 +53,7 @@ function cli() {
 		//.introIfTTY
 		.noIntro
 		.helpOption
+		.camel
 		.arg( 'source' ).string
 			.required
 			.typeLabel( '.bks or .kfg' )
@@ -60,6 +61,8 @@ function cli() {
 		.opt( [ 'output' , 'o' ] ).string
 			.typeLabel( 'output-file' )
 			.description( "The output file, if not present: output to stdout." )
+		.opt( [ 'parse-only' , 'p' ] ).flag
+			.description( "Just parse and output the structure." )
 		.run() ;
 	/* eslint-enable indent */
 
@@ -149,6 +152,13 @@ function cli() {
 	//structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' , nbspToSharp ] ) ;
 	//structuredDocument.postProcessText( [ 'french-typo' , nbspToSharp ] ) ;
 	//console.error( JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
+
+	if ( args.parseOnly ) {
+		const inspect = require( 'string-kit/lib/inspect.js' ).inspect ;
+		const inspectOptions = { style: 'color' , depth: 20 , outputMaxLength: 1000000 } ;
+		console.log( inspect( inspectOptions , structuredDocument ) ) ;
+		return ;
+	}
 
 	if ( ! isPackage && structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
 		if ( structuredDocument.theme && typeof structuredDocument.theme === 'object' ) {
