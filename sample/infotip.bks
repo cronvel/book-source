@@ -1,7 +1,7 @@
 
-Some ?[text with infotip][Some text in an infotip]!
+Some ?[text with an infotip][Secret message !!!]!
 
-And this is an ![auto infotip].
+And this is an ?[auto infotip].
 
 
 
