@@ -1,7 +1,8 @@
 
 theme:
 	palette:
-		blue: #7788aa
+		baseColors:
+			blue: #7788aa
 	colors:
 		text: %dark red
 
