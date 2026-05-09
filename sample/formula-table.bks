@@ -1,0 +1,21 @@
+
+Brainstorming some spreadsheet syntaxes.
+
+|[ Some title ]|
+| A      | B      | C       | Sum                       |
+|--------|--------|---------|---------------------------|
+| $[?=1] | $[?=2] | $[?=3]  | $[=avg(area({@-1},{@-3})] |
+| $[?=4] | $[?=8] | $[?=18] | $[^=] |
+
+* $[?=default] : editable value with default value
+* $[=formula] : automatic field computed with a formula
+* $[^=] : same formula than the cell above
+* $[<=] : same formula than the cell to the left
+* area() : return an array based on the cell from a rectangular selection
+* {x,y} : an absolute coordinate
+* {@x,@y} : a relative coordinate, based on the current cell coordinate
+* {x,@y} : x is absolute, y is relative
+* {@x} : the same than {@x,@0}
+* {,@y} : the same than {@0,@y}
+
+
