@@ -138,7 +138,6 @@ function cli() {
 	}
 
 	var structuredDocument = bookSource.parse( rawContent , {
-		autoId: true ,
 		metadataParser: kungFig.parse
 	} ) ;
 	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
@@ -148,6 +147,11 @@ function cli() {
 		part.text = part.text.replace( new RegExp( String.fromCharCode( 0xa0 ) , 'g' ) , '#' ) ;
 		//console.error( "AFT:" , JSON.stringify( part.text ) ) ;
 	}
+
+	structuredDocument.postProcess( {
+		autoId: true ,
+		summary: true
+	} ) ;
 
 	structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' ] ) ;
 	//structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' , nbspToSharp ] ) ;
