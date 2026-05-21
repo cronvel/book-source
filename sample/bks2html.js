@@ -138,6 +138,7 @@ function cli() {
 	}
 
 	var structuredDocument = bookSource.parse( rawContent , {
+		autoId: true ,
 		metadataParser: kungFig.parse
 	} ) ;
 	//console.error( "structuredDocument: " , JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
@@ -191,6 +192,7 @@ function cli() {
 			standaloneCss ,
 			coreCss ,
 			codeCss ,
+			idAttribute: true ,
 			codeHighlighter: ( text , lang ) => highlight.highlight( text , { language: lang } ).value
 		}
 	) ;
