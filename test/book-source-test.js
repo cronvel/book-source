@@ -24,6 +24,8 @@
 	SOFTWARE.
 */
 
+"use strict" ;
+
 /* global expect, describe, it, before, after */
 
 
@@ -32,16 +34,18 @@ const bookSource = require( '..' ) ;
 
 
 
-describe( "Nested inline markup" , function() {
+describe( "Nested inline markup" , () => {
 
 	it( "Nested with many depth" , () => {
 		var doc = bookSource.parse( "[[Nesting]<magenta> things to [**another** *level*...]<yellow>]<bg:light blue>" ) ;
 		//log( "%[10l50000]Y" , doc.parts ) ;
 		expect( doc.parts ).to.be.like( [
 			{
+				id: null ,
 				type: "paragraph" ,
 				parts: [
 					{
+						id: null ,
 						type: "styledText" ,
 						style: {
 							textColor: null ,
@@ -52,7 +56,7 @@ describe( "Nested inline markup" , function() {
 								baseName: "blue" ,
 								lightnessLevel: 1 ,
 								opacityLevel: 0 ,
-								saturationLevel: -1 ,
+								saturationLevel: - 1 ,
 								shadeRate: 0 ,
 								tintRate: 0 ,
 								toneRate: 0
@@ -61,6 +65,7 @@ describe( "Nested inline markup" , function() {
 						} ,
 						parts: [
 							{
+								id: null ,
 								type: "styledText" ,
 								style: {
 									backgroundColor: null ,
@@ -80,16 +85,19 @@ describe( "Nested inline markup" , function() {
 								} ,
 								parts: [
 									{
+										id: null ,
 										type: "text" ,
 										text: "Nesting"
 									}
-                                ]
+								]
 							} ,
 							{
+								id: null ,
 								type: "text" ,
 								text: " things to "
 							} ,
 							{
+								id: null ,
 								type: "styledText" ,
 								style: {
 									backgroundColor: null ,
@@ -109,35 +117,41 @@ describe( "Nested inline markup" , function() {
 								} ,
 								parts: [
 									{
+										id: null ,
 										type: "emphasisText" ,
 										level: 2 ,
 										parts: [
 											{
+												id: null ,
 												type: "text" ,
 												text: "another"
 											}
 										]
 									} ,
 									{
+										id: null ,
 										type: "text" ,
 										text: " "
 									} ,
 									{
+										id: null ,
 										type: "emphasisText" ,
 										level: 1 ,
 										parts: [
 											{
+												id: null ,
 												type: "text" ,
 												text: "level"
 											}
 										]
 									} ,
 									{
+										id: null ,
 										type: "text" ,
 										text: "..."
-									} ,
-                                ]
-							} ,
+									}
+								]
+							}
 						]
 					}
 				]
@@ -148,20 +162,23 @@ describe( "Nested inline markup" , function() {
 
 
 
-describe( "Backslash inside inline markup" , function() {
-	
+describe( "Backslash inside inline markup" , () => {
+
 	it( "emphasis and backslash" , () => {
 		var doc = bookSource.parse( "*Emphasis with \\* char*" ) ;
 		//log( "%[10]Y" , doc.parts ) ;
 		expect( doc.parts ).to.be.like( [
 			{
+				id: null ,
 				type: "paragraph" ,
 				parts: [
 					{
+						id: null ,
 						type: "emphasisText" ,
 						level: 1 ,
 						parts: [
 							{
+								id: null ,
 								type: "text" ,
 								text: "Emphasis with * char"
 							}
@@ -177,14 +194,17 @@ describe( "Backslash inside inline markup" , function() {
 		//log( "%[10]Y" , doc.parts ) ;
 		expect( doc.parts ).to.be.like( [
 			{
+				id: null ,
 				type: "paragraph" ,
 				parts: [
 					{
+						id: null ,
 						type: "decoratedText" ,
 						level: 1 ,
 						underline: true ,
 						parts: [
 							{
+								id: null ,
 								type: "text" ,
 								text: "Decorated text with * char"
 							}
@@ -200,9 +220,11 @@ describe( "Backslash inside inline markup" , function() {
 		//log( "%[10]Y" , doc.parts ) ;
 		expect( doc.parts ).to.be.like( [
 			{
+				id: null ,
 				type: "paragraph" ,
 				parts: [
 					{
+						id: null ,
 						type: "styledText" ,
 						style: {
 							backgroundColor: null ,
@@ -222,6 +244,7 @@ describe( "Backslash inside inline markup" , function() {
 						} ,
 						parts: [
 							{
+								id: null ,
 								type: "text" ,
 								text: "Styled text with * char"
 							}
@@ -237,13 +260,16 @@ describe( "Backslash inside inline markup" , function() {
 		//log( "%[10]Y" , doc.parts ) ;
 		expect( doc.parts ).to.be.like( [
 			{
+				id: null ,
 				type: "paragraph" ,
 				parts: [
 					{
+						id: null ,
 						type: "link" ,
 						href: "example.com/welcome" ,
 						parts: [
 							{
+								id: null ,
 								type: "text" ,
 								text: "Link with * char"
 							}

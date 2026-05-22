@@ -1,9 +1,12 @@
 
+# Some Title
+
 Summary:
 #(%summary)
 
 
 
+#(%summary-start)
 ## Chapter I: The Encounter
 
 Ok guy, let's start our story!
@@ -21,4 +24,40 @@ This chapter is quite spooky.
 Duplicated header.
 It's too late...
 He comes...
+
+
+
+#(%summary-end)
+## Chapter IV: Long Boring Stuff
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
+Paragraph
+
 

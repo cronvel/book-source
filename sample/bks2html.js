@@ -148,15 +148,16 @@ function cli() {
 		//console.error( "AFT:" , JSON.stringify( part.text ) ) ;
 	}
 
-	structuredDocument.postProcess( {
-		autoId: true ,
-		summary: true
-	} ) ;
-
 	structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' ] ) ;
 	//structuredDocument.textPostFilter( [ 'apostrophe' , 'french-typo' , nbspToSharp ] ) ;
 	//structuredDocument.postProcessText( [ 'french-typo' , nbspToSharp ] ) ;
 	//console.error( JSON.stringify( structuredDocument , null , '    ' ) ) ; return ;
+
+	structuredDocument.postProcess( {
+		//autoId: true ,
+		//summary: true ,
+		summary: { maxLevel: 2 } ,
+	} ) ;
 
 	if ( args.parseOnly ) {
 		const inspect = require( 'string-kit/lib/inspect.js' ).inspect ;
