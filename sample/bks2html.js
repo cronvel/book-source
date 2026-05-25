@@ -61,6 +61,12 @@ function cli() {
 		.opt( [ 'output' , 'o' ] ).string
 			.typeLabel( 'output-file' )
 			.description( "The output file, if not present: output to stdout." )
+		.opt( [ 'summary-render' , 's' ] ).flag
+			.description( "Render only the summary, not the document." )
+		.opt( [ 'fragment' , 'F' ] ).flag
+			.description( "Output a fragment." )
+		.opt( [ 'container' ] , true ).flag
+			.description( "Output the document in a container or not." )
 		.opt( [ 'parse-only' , 'p' ] ).flag
 			.description( "Just parse and output the structure." )
 		.run() ;
@@ -162,7 +168,12 @@ function cli() {
 	if ( args.parseOnly ) {
 		const inspect = require( 'string-kit/lib/inspect.js' ).inspect ;
 		const inspectOptions = { style: 'color' , depth: 20 , outputMaxLength: 1000000 } ;
-		console.log( inspect( inspectOptions , structuredDocument ) ) ;
+
+		let str ;
+		if ( args.summaryRender ) { str = inspect( inspectOptions , structuredDocument.summary ) ; }
+		else { str = inspect( inspectOptions , structuredDocument ) ; }
+
+		console.log( str ) ;
 		return ;
 	}
 
@@ -193,7 +204,8 @@ function cli() {
 	var htmlRenderer = new HtmlRenderer(
 		theme ,
 		{
-			standalone: true ,
+			standalone: ! args.fragment ,
+			noContainer: ! args.container ,
 			standaloneCss ,
 			coreCss ,
 			codeCss ,
@@ -202,7 +214,8 @@ function cli() {
 		}
 	) ;
 
-	var html = structuredDocument.render( htmlRenderer ) ;
+	var specialRender = args.summaryRender ? 'summary' : null ;
+	var html = structuredDocument.render( htmlRenderer , specialRender ) ;
 
 	if ( ! args.output ) {
 		console.log( html ) ;
