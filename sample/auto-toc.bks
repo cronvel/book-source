@@ -2,11 +2,11 @@
 # Some Title
 
 Summary:
-#(%summary)
+#(%toc)
 
 
 
-#(%summary-start)
+#(%toc-start)
 ## Chapter I: The Encounter
 
 Ok guy, let's start our story!
@@ -17,7 +17,13 @@ Ok guy, let's start our story!
 
 This chapter is quite spooky.
 
+### Sub-chapter 1
 
+Blah.
+
+### Sub-chapter 2
+
+Blah.
 
 ## Chapter III: [He comes...]<red>
 
@@ -27,7 +33,7 @@ He comes...
 
 
 
-#(%summary-end)
+#(%toc-end)
 ## Chapter IV: Long Boring Stuff
 
 Paragraph

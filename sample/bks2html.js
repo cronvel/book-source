@@ -61,8 +61,8 @@ function cli() {
 		.opt( [ 'output' , 'o' ] ).string
 			.typeLabel( 'output-file' )
 			.description( "The output file, if not present: output to stdout." )
-		.opt( [ 'summary-render' , 's' ] ).flag
-			.description( "Render only the summary, not the document." )
+		.opt( [ 'toc-render' , 't' ] ).flag
+			.description( "Render only the Table of Contents, not the document." )
 		.opt( [ 'fragment' , 'F' ] ).flag
 			.description( "Output a fragment." )
 		.opt( [ 'container' ] , true ).flag
@@ -161,8 +161,8 @@ function cli() {
 
 	structuredDocument.postProcess( {
 		//autoId: true ,
-		//summary: true ,
-		summary: { maxLevel: 2 } ,
+		//toc: true ,
+		toc: { maxLevel: 3 } ,
 	} ) ;
 
 	if ( args.parseOnly ) {
@@ -170,7 +170,7 @@ function cli() {
 		const inspectOptions = { style: 'color' , depth: 20 , outputMaxLength: 1000000 } ;
 
 		let str ;
-		if ( args.summaryRender ) { str = inspect( inspectOptions , structuredDocument.summary ) ; }
+		if ( args.tocRender ) { str = inspect( inspectOptions , structuredDocument.toc ) ; }
 		else { str = inspect( inspectOptions , structuredDocument ) ; }
 
 		console.log( str ) ;
@@ -214,7 +214,7 @@ function cli() {
 		}
 	) ;
 
-	var specialRender = args.summaryRender ? 'summary' : null ;
+	var specialRender = args.tocRender ? 'toc' : null ;
 	var html = structuredDocument.render( htmlRenderer , specialRender ) ;
 
 	if ( ! args.output ) {
