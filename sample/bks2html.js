@@ -61,10 +61,12 @@ function cli() {
 		.opt( [ 'output' , 'o' ] ).string
 			.typeLabel( 'output-file' )
 			.description( "The output file, if not present: output to stdout." )
-		.opt( [ 'toc-render' , 't' ] ).flag
-			.description( "Render only the Table of Contents, not the document." )
 		.opt( [ 'fragment' , 'F' ] ).flag
 			.description( "Output a fragment." )
+		.opt( [ 'toc-render' , 'T' ] ).flag
+			.description( "Render only the Table of Contents, not the document." )
+		.opt( [ 'simple-toc' , 'st' ] ).flag
+			.description( "Display the simplified Table of Contents, not the document (only works for --parse-only)." )
 		.opt( [ 'container' ] , true ).flag
 			.description( "Output the document in a container or not." )
 		.opt( [ 'parse-only' , 'p' ] ).flag
@@ -169,9 +171,12 @@ function cli() {
 		const inspect = require( 'string-kit/lib/inspect.js' ).inspect ;
 		const inspectOptions = { style: 'color' , depth: 20 , outputMaxLength: 1000000 } ;
 
-		let str ;
-		if ( args.tocRender ) { str = inspect( inspectOptions , structuredDocument.toc ) ; }
-		else { str = inspect( inspectOptions , structuredDocument ) ; }
+		let toInspect =
+			args.simpleToc ? structuredDocument.toc :
+			args.tocRender ? structuredDocument.tocList :
+			structuredDocument ;
+
+		let str = inspect( inspectOptions , toInspect ) ;
 
 		console.log( str ) ;
 		return ;
