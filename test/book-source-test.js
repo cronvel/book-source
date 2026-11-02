@@ -61,6 +61,7 @@ describe( "Nested inline markup" , () => {
 								tintRate: 0 ,
 								toneRate: 0
 							} ,
+							width: null ,
 							fx: null
 						} ,
 						parts: [
@@ -81,6 +82,7 @@ describe( "Nested inline markup" , () => {
 										tintRate: 0 ,
 										toneRate: 0
 									} ,
+									width: null ,
 									fx: null
 								} ,
 								parts: [
@@ -113,6 +115,7 @@ describe( "Nested inline markup" , () => {
 										tintRate: 0 ,
 										toneRate: 0
 									} ,
+									width: null ,
 									fx: null
 								} ,
 								parts: [
@@ -240,6 +243,7 @@ describe( "Backslash inside inline markup" , () => {
 								tintRate: 0 ,
 								toneRate: 0
 							} ,
+							width: null ,
 							fx: null
 						} ,
 						parts: [
